@@ -59,12 +59,12 @@
                 <a href="#contact" data-i18n="nav_contact">اتصل بنا</a>
             </nav>
             <div class="header-actions">
-                <div class="search-wrapper">
+                <!-- <div class="search-wrapper">
                     <input type="text" id="product-search" data-i18n-placeholder="search_placeholder"
                         placeholder="بحث عن منتج...">
                     <i class="fas fa-search search-icon"></i>
                     <i class="fas fa-times-circle clear-search" id="clear-search"></i>
-                </div>
+                </div> -->
                 <button class="cart-toggle-btn" onclick="toggleCartDrawer()">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count">0</span>
@@ -110,7 +110,7 @@
 
             <div class="process-wrapper" data-aos="fade-up">
                 <!-- Item 1: Manufacturing -->
-                <div class="process-step">
+                <div class="process-step" data-service-id="manufacturing" onclick="openServiceModal('manufacturing')" style="cursor: pointer;">
                     <div class="step-icon-wrap">
                         <div class="step-icon">
                             <i class="fas fa-industry"></i>
@@ -127,7 +127,7 @@
                 </div>
 
                 <!-- Item 2: Packaging -->
-                <div class="process-step">
+                <div class="process-step" data-service-id="packaging" onclick="openServiceModal('packaging')" style="cursor: pointer;">
                     <div class="step-icon-wrap">
                         <div class="step-icon">
                             <i class="fas fa-box-open"></i>
@@ -144,7 +144,7 @@
                 </div>
 
                 <!-- Item 3: Additives -->
-                <div class="process-step">
+                <div class="process-step" data-service-id="additives" onclick="openServiceModal('additives')" style="cursor: pointer;">
                     <div class="step-icon-wrap">
                         <div class="step-icon">
                             <i class="fas fa-flask"></i>
@@ -161,7 +161,7 @@
                 </div>
 
                 <!-- Item 4: Import -->
-                <div class="process-step">
+                <div class="process-step" data-service-id="import-export" onclick="openServiceModal('import-export')" style="cursor: pointer;">
                     <div class="step-icon-wrap">
                         <div class="step-icon">
                             <i class="fas fa-ship"></i>
@@ -217,10 +217,10 @@
                                 <small class="currency">EGP</small>
                                 <span class="price">34k</span>
                                 <div class="quantity-selector">
-                                    <button class="qty-btn minus" onclick="updateQty('sn-300-tn', -1, event)"><i
+                                    <button class="qty-btn minus" onclick="updateQty('sn-300-tn', -10, event)"><i
                                             class="fas fa-minus"></i></button>
                                     <span class="qty-count" data-id="sn-300-tn">0</span>
-                                    <button class="qty-btn plus" onclick="updateQty('sn-300-tn', 1, event)"><i
+                                    <button class="qty-btn plus" onclick="updateQty('sn-300-tn', 10, event)"><i
                                             class="fas fa-plus"></i></button>
                                 </div>
                             </div>
@@ -255,10 +255,10 @@
                                 <small class="currency">EGP</small>
                                 <span class="price">40k</span>
                                 <div class="quantity-selector">
-                                    <button class="qty-btn minus" onclick="updateQty('cd-50-tn', -1, event)"><i
+                                    <button class="qty-btn minus" onclick="updateQty('cd-50-tn', -10, event)"><i
                                             class="fas fa-minus"></i></button>
                                     <span class="qty-count" data-id="cd-50-tn">0</span>
-                                    <button class="qty-btn plus" onclick="updateQty('cd-50-tn', 1, event)"><i
+                                    <button class="qty-btn plus" onclick="updateQty('cd-50-tn', 10, event)"><i
                                             class="fas fa-plus"></i></button>
                                 </div>
                             </div>
@@ -282,10 +282,10 @@
                                 <small class="currency">EGP</small>
                                 <span class="price">760</span>
                                 <div class="quantity-selector">
-                                    <button class="qty-btn minus" onclick="updateQty('cd-20l', -1, event)"><i
+                                    <button class="qty-btn minus" onclick="updateQty('cd-20l', -10, event)"><i
                                             class="fas fa-minus"></i></button>
                                     <span class="qty-count" data-id="cd-20l">0</span>
-                                    <button class="qty-btn plus" onclick="updateQty('cd-20l', 1, event)"><i
+                                    <button class="qty-btn plus" onclick="updateQty('cd-20l', 10, event)"><i
                                             class="fas fa-plus"></i></button>
                                 </div>
                             </div>
@@ -309,10 +309,10 @@
                                 <small class="currency">EGP</small>
                                 <span class="price">695</span>
                                 <div class="quantity-selector">
-                                    <button class="qty-btn minus" onclick="updateQty('cd-4l', -1, event)"><i
+                                    <button class="qty-btn minus" onclick="updateQty('cd-4l', -10, event)"><i
                                             class="fas fa-minus"></i></button>
                                     <span class="qty-count" data-id="cd-4l">0</span>
-                                    <button class="qty-btn plus" onclick="updateQty('cd-4l', 1, event)"><i
+                                    <button class="qty-btn plus" onclick="updateQty('cd-4l', 10, event)"><i
                                             class="fas fa-plus"></i></button>
                                 </div>
                             </div>
@@ -336,10 +336,10 @@
                                 <small class="currency">EGP</small>
                                 <span class="price">610</span>
                                 <div class="quantity-selector">
-                                    <button class="qty-btn minus" onclick="updateQty('cd-1l', -1, event)"><i
+                                    <button class="qty-btn minus" onclick="updateQty('cd-1l', -10, event)"><i
                                             class="fas fa-minus"></i></button>
                                     <span class="qty-count" data-id="cd-1l">0</span>
-                                    <button class="qty-btn plus" onclick="updateQty('cd-1l', 1, event)"><i
+                                    <button class="qty-btn plus" onclick="updateQty('cd-1l', 10, event)"><i
                                             class="fas fa-plus"></i></button>
                                 </div>
                             </div>
@@ -374,10 +374,10 @@
                                 <small class="currency">EGP</small>
                                 <span class="price">610</span>
                                 <div class="quantity-selector">
-                                    <button class="qty-btn minus" onclick="updateQty('hyd-68-1', -1, event)"><i
+                                    <button class="qty-btn minus" onclick="updateQty('hyd-68-1', -10, event)"><i
                                             class="fas fa-minus"></i></button>
                                     <span class="qty-count" data-id="hyd-68-1">0</span>
-                                    <button class="qty-btn plus" onclick="updateQty('hyd-68-1', 1, event)"><i
+                                    <button class="qty-btn plus" onclick="updateQty('hyd-68-1', 10, event)"><i
                                             class="fas fa-plus"></i></button>
                                 </div>
                             </div>
@@ -401,10 +401,10 @@
                                 <small class="currency">EGP</small>
                                 <span class="price">595</span>
                                 <div class="quantity-selector">
-                                    <button class="qty-btn minus" onclick="updateQty('hyd-68-2', -1, event)"><i
+                                    <button class="qty-btn minus" onclick="updateQty('hyd-68-2', -10, event)"><i
                                             class="fas fa-minus"></i></button>
                                     <span class="qty-count" data-id="hyd-68-2">0</span>
-                                    <button class="qty-btn plus" onclick="updateQty('hyd-68-2', 1, event)"><i
+                                    <button class="qty-btn plus" onclick="updateQty('hyd-68-2', 10, event)"><i
                                             class="fas fa-plus"></i></button>
                                 </div>
                             </div>
@@ -439,10 +439,10 @@
                                 <small class="currency">EGP</small>
                                 <span class="price">650</span>
                                 <div class="quantity-selector">
-                                    <button class="qty-btn minus" onclick="updateQty('gl-140-1l', -1, event)"><i
+                                    <button class="qty-btn minus" onclick="updateQty('gl-140-1l', -10, event)"><i
                                             class="fas fa-minus"></i></button>
                                     <span class="qty-count" data-id="gl-140-1l">0</span>
-                                    <button class="qty-btn plus" onclick="updateQty('gl-140-1l', 1, event)"><i
+                                    <button class="qty-btn plus" onclick="updateQty('gl-140-1l', 10, event)"><i
                                             class="fas fa-plus"></i></button>
                                 </div>
                             </div>
@@ -466,10 +466,10 @@
                                 <small class="currency">EGP</small>
                                 <span class="price">710</span>
                                 <div class="quantity-selector">
-                                    <button class="qty-btn minus" onclick="updateQty('gl-140-4l', -1, event)"><i
+                                    <button class="qty-btn minus" onclick="updateQty('gl-140-4l', -10, event)"><i
                                             class="fas fa-minus"></i></button>
                                     <span class="qty-count" data-id="gl-140-4l">0</span>
-                                    <button class="qty-btn plus" onclick="updateQty('gl-140-4l', 1, event)"><i
+                                    <button class="qty-btn plus" onclick="updateQty('gl-140-4l', 10, event)"><i
                                             class="fas fa-plus"></i></button>
                                 </div>
                             </div>
@@ -493,10 +493,10 @@
                                 <small class="currency">EGP</small>
                                 <span class="price">650</span>
                                 <div class="quantity-selector">
-                                    <button class="qty-btn minus" onclick="updateQty('gl-140-16l', -1, event)"><i
+                                    <button class="qty-btn minus" onclick="updateQty('gl-140-16l', -10, event)"><i
                                             class="fas fa-minus"></i></button>
                                     <span class="qty-count" data-id="gl-140-16l">0</span>
-                                    <button class="qty-btn plus" onclick="updateQty('gl-140-16l', 1, event)"><i
+                                    <button class="qty-btn plus" onclick="updateQty('gl-140-16l', 10, event)"><i
                                             class="fas fa-plus"></i></button>
                                 </div>
                             </div>
@@ -531,10 +531,10 @@
                                 <small class="currency">EGP</small>
                                 <span class="price">1,617</span>
                                 <div class="quantity-selector">
-                                    <button class="qty-btn minus" onclick="updateQty('cf-50-100-20l', -1, event)"><i
+                                    <button class="qty-btn minus" onclick="updateQty('cf-50-100-20l', -10, event)"><i
                                             class="fas fa-minus"></i></button>
                                     <span class="qty-count" data-id="cf-50-100-20l">0</span>
-                                    <button class="qty-btn plus" onclick="updateQty('cf-50-100-20l', 1, event)"><i
+                                    <button class="qty-btn plus" onclick="updateQty('cf-50-100-20l', 10, event)"><i
                                             class="fas fa-plus"></i></button>
                                 </div>
                             </div>
@@ -558,10 +558,10 @@
                                 <small class="currency">EGP</small>
                                 <span class="price">1,010</span>
                                 <div class="quantity-selector">
-                                    <button class="qty-btn minus" onclick="updateQty('cf-20-20l', -1, event)"><i
+                                    <button class="qty-btn minus" onclick="updateQty('cf-20-20l', -10, event)"><i
                                             class="fas fa-minus"></i></button>
                                     <span class="qty-count" data-id="cf-20-20l">0</span>
-                                    <button class="qty-btn plus" onclick="updateQty('cf-20-20l', 1, event)"><i
+                                    <button class="qty-btn plus" onclick="updateQty('cf-20-20l', 10, event)"><i
                                             class="fas fa-plus"></i></button>
                                 </div>
                             </div>
@@ -586,10 +586,10 @@
                                 <small class="currency">EGP</small>
                                 <span class="price">680</span>
                                 <div class="quantity-selector">
-                                    <button class="qty-btn minus" onclick="updateQty('cf-1-6l', -1, event)"><i
+                                    <button class="qty-btn minus" onclick="updateQty('cf-1-6l', -10, event)"><i
                                             class="fas fa-minus"></i></button>
                                     <span class="qty-count" data-id="cf-1-6l">0</span>
-                                    <button class="qty-btn plus" onclick="updateQty('cf-1-6l', 1, event)"><i
+                                    <button class="qty-btn plus" onclick="updateQty('cf-1-6l', 10, event)"><i
                                             class="fas fa-plus"></i></button>
                                 </div>
                             </div>
@@ -643,6 +643,33 @@
                             <span data-i18n="order_whatsapp_cart">إتمام الطلب عبر الواتساب</span>
                         </button>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Details Modal -->
+    <div class="service-modal-overlay" id="service-modal-overlay" aria-hidden="true">
+        <div class="service-modal-backdrop" onclick="closeServiceModal()"></div>
+        <div class="service-modal-content">
+            <button type="button" class="service-modal-close" onclick="closeServiceModal()" aria-label="إغلاق">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="service-modal-header">
+                <div class="service-modal-icon-wrap" id="service-modal-icon-wrap">
+                    <i class="fas fa-industry" id="service-modal-icon"></i>
+                </div>
+                <h2 class="service-modal-title" id="service-modal-title"></h2>
+            </div>
+            <div class="service-modal-body">
+                <div class="service-intro" id="service-intro"></div>
+                <div class="service-what-we-offer">
+                    <h3 class="service-section-title" id="service-what-title"></h3>
+                    <ul class="service-list" id="service-what-list"></ul>
+                </div>
+                <div class="service-features">
+                    <h3 class="service-section-title" id="service-features-title"></h3>
+                    <ul class="service-features-list" id="service-features-list"></ul>
                 </div>
             </div>
         </div>
