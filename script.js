@@ -899,30 +899,30 @@ const serviceIcons = {
     'manufacturing': 'fa-industry',
     'packaging': 'fa-box-open',
     'additives': 'fa-flask',
-    'import-export': 'fa-ship'
+    'import': 'fa-ship'
 };
 
 function openServiceModal(serviceId) {
     const overlay = document.getElementById('service-modal-overlay');
     const langData = translations[currentLang];
-    
+
     // Set icon
     const iconEl = document.getElementById('service-modal-icon');
     const iconClass = serviceIcons[serviceId] || 'fa-info-circle';
     iconEl.className = `fas ${iconClass}`;
-    
+
     // Set title
-    const titleKey = `service_${serviceId === 'import-export' ? '4' : serviceId === 'manufacturing' ? '1' : serviceId === 'packaging' ? '2' : '3'}`;
+    const titleKey = `service_${serviceId === 'import' ? '4' : serviceId === 'manufacturing' ? '1' : serviceId === 'packaging' ? '2' : '3'}`;
     document.getElementById('service-modal-title').textContent = langData[titleKey] || '';
-    
+
     // Set intro
     const introKey = `service_${serviceId}_intro`;
     document.getElementById('service-intro').textContent = langData[introKey] || '';
-    
+
     // Set "What we offer" section
     const whatTitleKey = `service_${serviceId}_what_title`;
     document.getElementById('service-what-title').textContent = langData[whatTitleKey] || '';
-    
+
     const whatListEl = document.getElementById('service-what-list');
     whatListEl.innerHTML = '';
     let i = 1;
@@ -937,9 +937,9 @@ function openServiceModal(serviceId) {
             break;
         }
     }
-    
+
     // Special handling for import-export (has import/export subsections)
-    if (serviceId === 'import-export') {
+    if (serviceId === 'import') {
         const importTitleKey = `service_${serviceId}_what_import_title`;
         const exportTitleKey = `service_${serviceId}_what_export_title`;
         if (langData[importTitleKey]) {
@@ -969,11 +969,11 @@ function openServiceModal(serviceId) {
             }
         }
     }
-    
+
     // Set features section
     const featuresTitleKey = `service_${serviceId}_features_title`;
     document.getElementById('service-features-title').textContent = langData[featuresTitleKey] || '';
-    
+
     const featuresListEl = document.getElementById('service-features-list');
     featuresListEl.innerHTML = '';
     let k = 1;
@@ -988,7 +988,7 @@ function openServiceModal(serviceId) {
             break;
         }
     }
-    
+
     overlay.classList.add('active');
     overlay.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
