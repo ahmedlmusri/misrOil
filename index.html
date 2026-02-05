@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misr Oil | مصر رويل</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Montserrat:wght@400;700;900&family=Michroma&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="product-logo-placeholder.png"  type="image/png" sizes="32x32"/>   
+     <!-- Meta tags for premium branding -->
+    <meta name="description" content="الباب الأول والجودة في عالم زيوت المحركات. Misr Oil تمنحك الأداء والذكاء التقني.">
+</head>
+
+<body>
+    <!-- Premium Preloader -->
+    <div class="preloader">
+        <div class="loader-content">
+            <img src="loader_red_icon.png" alt="Loading..." class="main-loader-img">
+            <h1 class="loader-text">MISR <span>OIL</span></h1>
+        </div>
+    </div>
+
+
+    <!-- Header -->
+    <header class="header">
+        <div class="top-ticker">
+            <div class="ticker-content">
+                <span>مصر اويل - الرائدة في صناعة الزيوت - جودة عالمية وأسعار تنافسية
+                    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; تواصل معنا الآن: 01558040645
+                    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; خصومات هائلة للكميات</span>
+                <span>مصر اويل - الرائدة في صناعة الزيوت - جودة عالمية وأسعار تنافسية
+                    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; تواصل معنا الآن: 01558040645
+                    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; خصومات هائلة للكميات</span>
+            </div>
+        </div>
+        <div class="container">
+            <a href="#home" class="logo">
+                <div class="logo-crop-container">
+                    <img src="misr_oil_full_logo.png" alt="Luboil" class="header-logo-icon">
+                </div>
+            </a>
+            <nav class="navbar">
+                <a href="#home" class="active" data-i18n="nav_home">الرئيسية</a>
+                <a href="#services" data-i18n="nav_services">خدماتنا</a>
+                <a href="#products" data-i18n="nav_products">منتجاتنا</a>
+                <a href="#about" data-i18n="nav_about">عن الشركة</a>
+                <a href="#team" data-i18n="nav_team">فريقنا</a>
+                <a href="#contact" data-i18n="nav_contact">اتصل بنا</a>
+            </nav>
+            <div class="header-actions">
+                <div class="search-wrapper">
+                    <input type="text" id="product-search" data-i18n-placeholder="search_placeholder"
+                        placeholder="بحث عن منتج...">
+                    <i class="fas fa-search search-icon"></i>
+                    <i class="fas fa-times-circle clear-search" id="clear-search"></i>
+                </div>
+                <button class="cart-toggle-btn" onclick="toggleCartDrawer()">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="lang-btn" onclick="toggleLanguage()">
+                    <i class="fas fa-globe"></i> <span id="lang-text">English</span>
+                </button>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay">
+            <img src="hero_banner_v2.jpg" alt="Misr Oil Hero Banner" class="hero-image-design" />
+
+            <!-- Animated Background Glows -->
+            <div class="hero-glow glow-tr"></div>
+            <div class="hero-glow glow-bl"></div>
+        </div>
+    </section>
+<!-- Separator Hero -> Products with Order Button -->
+<div class="section-separator"
+style="background: #000; height: 70px; display: flex; justify-content: center; align-items: center; position: relative; z-index: 10;">
+<button type="button" class="hero-whatsapp-btn" data-aos="fade-up" onclick="openOrderModal()">
+    <i class="fab fa-whatsapp"></i>
+    <span data-i18n="order_whatsapp">اطلب الآن</span>
+</button>
+</div>
+        <!-- Separator Products -> Services -->
+        <div class="section-separator sep-white-mauve"></div>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2 data-i18n="section_services_title">خدماتنا</h2>
+                    <div class="line"></div>
+                </div>
+    
+                <div class="process-wrapper" data-aos="fade-up">
+                    <!-- Item 1: Manufacturing -->
+                    <div class="process-step">
+                        <div class="step-icon-wrap">
+                            <div class="step-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <span class="step-number">1</span>
+                        </div>
+                        <h3 data-i18n="service_1">التصنيع للغير</h3>
+                        <p data-i18n="service_1_desc">نقدم خدمات تصنيع زيوت عالية الجودة بمواصفات عالمية.</p>
+                    </div>
+    
+                    <!-- Arrow 1 -->
+                    <div class="process-arrow">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+    
+                    <!-- Item 2: Packaging -->
+                    <div class="process-step">
+                        <div class="step-icon-wrap">
+                            <div class="step-icon">
+                                <i class="fas fa-box-open"></i>
+                            </div>
+                            <span class="step-number">2</span>
+                        </div>
+                        <h3 data-i18n="service_2">التعبئة والتغليف</h3>
+                        <p data-i18n="service_2_desc">حلول تعبئة وتغليف متكاملة تناسب جميع الاحتياجات.</p>
+                    </div>
+    
+                    <!-- Arrow 2 -->
+                    <div class="process-arrow">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+    
+                    <!-- Item 3: Additives -->
+                    <div class="process-step">
+                        <div class="step-icon-wrap">
+                            <div class="step-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <span class="step-number">3</span>
+                        </div>
+                        <h3 data-i18n="service_3">توريد الإضافات</h3>
+                        <p data-i18n="service_3_desc">نوفر أفضل الإضافات لتعزيز كفاءة وأداء الزيوت.</p>
+                    </div>
+    
+                    <!-- Arrow 3 -->
+                    <div class="process-arrow">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+    
+                    <!-- Item 4: Import -->
+                    <div class="process-step">
+                        <div class="step-icon-wrap">
+                            <div class="step-icon">
+                                <i class="fas fa-ship"></i>
+                            </div>
+                            <span class="step-number">4</span>
+                        </div>
+                        <h3 data-i18n="service_4">الاستيراد والتوريد</h3>
+                        <p data-i18n="service_4_desc">خدمات استيراد متكاملة عبر بطاقة استيرادية موثوقة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Separator Services -> About (Spacer) -->
+        <div style="height: 50px; background: var(--accent-bg);"></div>
+    
+
+    
+
+
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 data-i18n="section_products_title">منتجاتنا</h2>
+                <div class="line"></div>
+            </div>
+
+            <!-- Category 1: Base Oil -->
+            <div class="product-category" data-aos="fade-up">
+                <div class="category-header">
+                    <h3 class="category-title" data-i18n="cat_base_oil">
+                        <i class="fas fa-oil-can"></i> Base Oil
+                    </h3>
+                    <div class="category-line"></div>
+                </div>
+                <div class="products-grid">
+                    <!-- Product: SN 300 TN -->
+                    <div class="product-card" data-product-id="sn-300-tn" data-aos="zoom-in">
+                        <div class="product-img">
+                            <img src="public/images/basic-oil.png" alt="SN 300 TN">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">SN 300</h3>
+                            <div class="product-specs">
+                                <i class="fas fa-flask" style="color: #e74c3c;"></i>
+                                <span>TN</span>
+                                <i class="fas fa-oil-can" style="color: #e74c3c;"></i>
+                                <span>BASE OIL</span>
+                            </div>
+                            <div class="product-action-pill">
+                                <small class="currency">EGP</small>
+                                <span class="price">34k</span>
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus" onclick="updateQty('sn-300-tn', -1, event)"><i
+                                            class="fas fa-minus"></i></button>
+                                    <span class="qty-count" data-id="sn-300-tn">0</span>
+                                    <button class="qty-btn plus" onclick="updateQty('sn-300-tn', 1, event)"><i
+                                            class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 2: CD Diesel / Engine Oil -->
+            <div class="product-category" data-aos="fade-up">
+                <div class="category-header">
+                    <h3 class="category-title" data-i18n="cat_cd_diesel">
+                        <i class="fas fa-truck"></i> CD Diesel / Engine Oil
+                    </h3>
+                    <div class="category-line"></div>
+                </div>
+                <div class="products-grid">
+                    <!-- Product: CD 50 TN -->
+                    <div class="product-card" data-product-id="cd-50-tn" data-aos="zoom-in">
+                        <div class="product-img">
+                            <img src="product-logo-placeholder.png" alt="CD 50 TN">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">CD 50</h3>
+                            <div class="product-specs">
+                                <i class="fas fa-flask" style="color: #e74c3c;"></i>
+                                <span>TN</span>
+                                <i class="fas fa-truck" style="color: #e74c3c;"></i>
+                                <span>SUPER DIESEL</span>
+                            </div>
+                            <div class="product-action-pill">
+                                <small class="currency">EGP</small>
+                                <span class="price">40k</span>
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus" onclick="updateQty('cd-50-tn', -1, event)"><i
+                                            class="fas fa-minus"></i></button>
+                                    <span class="qty-count" data-id="cd-50-tn">0</span>
+                                    <button class="qty-btn plus" onclick="updateQty('cd-50-tn', 1, event)"><i
+                                            class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product: CD 20L -->
+                    <div class="product-card" data-product-id="cd-20l" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="product-img">
+                            <img src="MISR OIL 20L copy.png" alt="CD 20L">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">CD - SC</h3>
+                            <div class="product-specs">
+                                <i class="fas fa-flask" style="color: #e74c3c;"></i>
+                                <span>LITERS 20</span>
+                                <i class="fas fa-truck" style="color: #e74c3c;"></i>
+                                <span>SUPER DIESEL</span>
+                            </div>
+                            <div class="product-action-pill">
+                                <small class="currency">EGP</small>
+                                <span class="price">760</span>
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus" onclick="updateQty('cd-20l', -1, event)"><i
+                                            class="fas fa-minus"></i></button>
+                                    <span class="qty-count" data-id="cd-20l">0</span>
+                                    <button class="qty-btn plus" onclick="updateQty('cd-20l', 1, event)"><i
+                                            class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product: CD 4L -->
+                    <div class="product-card" data-product-id="cd-4l" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="product-img">
+                            <img src="MISR OIL 4L copy.png" alt="CD 4L">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">CD - SC</h3>
+                            <div class="product-specs">
+                                <i class="fas fa-flask" style="color: #e74c3c;"></i>
+                                <span>LITERS 4</span>
+                                <i class="fas fa-truck" style="color: #e74c3c;"></i>
+                                <span>SUPER DIESEL</span>
+                            </div>
+                            <div class="product-action-pill">
+                                <small class="currency">EGP</small>
+                                <span class="price">695</span>
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus" onclick="updateQty('cd-4l', -1, event)"><i
+                                            class="fas fa-minus"></i></button>
+                                    <span class="qty-count" data-id="cd-4l">0</span>
+                                    <button class="qty-btn plus" onclick="updateQty('cd-4l', 1, event)"><i
+                                            class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product: CD 1L -->
+                    <div class="product-card" data-product-id="cd-1l" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="product-img">
+                            <img src="MISR OIL 1L.png" alt="CD 1L">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">CD - SC</h3>
+                            <div class="product-specs">
+                                <i class="fas fa-flask" style="color: #e74c3c;"></i>
+                                <span>LITERS 1</span>
+                                <i class="fas fa-truck" style="color: #e74c3c;"></i>
+                                <span>SUPER DIESEL</span>
+                            </div>
+                            <div class="product-action-pill">
+                                <small class="currency">EGP</small>
+                                <span class="price">610</span>
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus" onclick="updateQty('cd-1l', -1, event)"><i
+                                            class="fas fa-minus"></i></button>
+                                    <span class="qty-count" data-id="cd-1l">0</span>
+                                    <button class="qty-btn plus" onclick="updateQty('cd-1l', 1, event)"><i
+                                            class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 3: Hydraulic Oil ISO 68 -->
+            <div class="product-category" data-aos="fade-up">
+                <div class="category-header">
+                    <h3 class="category-title" data-i18n="cat_hydraulic">
+                        <i class="fas fa-industry"></i> Hydraulic Oil ISO 68
+                    </h3>
+                    <div class="category-line"></div>
+                </div>
+                <div class="products-grid">
+                    <!-- Product: Hydraulic Oil ISO 68 - 1 Yellow 16L -->
+                    <div class="product-card" data-product-id="hyd-68-1" data-aos="zoom-in">
+                        <div class="product-img">
+                            <img src="MISR OIL 16L copy.png" alt="Hydraulic Oil ISO 68 - 1 Yellow 16L">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">HYD ISO 68</h3>
+                            <div class="product-specs">
+                                <i class="fas fa-flask" style="color: #e74c3c;"></i>
+                                <span>LITERS 16</span>
+                                <i class="fas fa-industry" style="color: #e74c3c;"></i>
+                                <span>1 YELLOW</span>
+                            </div>
+                            <div class="product-action-pill">
+                                <small class="currency">EGP</small>
+                                <span class="price">610</span>
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus" onclick="updateQty('hyd-68-1', -1, event)"><i
+                                            class="fas fa-minus"></i></button>
+                                    <span class="qty-count" data-id="hyd-68-1">0</span>
+                                    <button class="qty-btn plus" onclick="updateQty('hyd-68-1', 1, event)"><i
+                                            class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product: Hydraulic Oil ISO 68 - 2 Yellow 16L -->
+                    <div class="product-card" data-product-id="hyd-68-2" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="product-img">
+                            <img src="MISR OIL 16L copy (1).png" alt="Hydraulic Oil ISO 68 - 2 Yellow 16L">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">HYD ISO 68</h3>
+                            <div class="product-specs">
+                                <i class="fas fa-flask" style="color: #e74c3c;"></i>
+                                <span>LITERS 16</span>
+                                <i class="fas fa-industry" style="color: #e74c3c;"></i>
+                                <span>2 YELLOW</span>
+                            </div>
+                            <div class="product-action-pill">
+                                <small class="currency">EGP</small>
+                                <span class="price">595</span>
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus" onclick="updateQty('hyd-68-2', -1, event)"><i
+                                            class="fas fa-minus"></i></button>
+                                    <span class="qty-count" data-id="hyd-68-2">0</span>
+                                    <button class="qty-btn plus" onclick="updateQty('hyd-68-2', 1, event)"><i
+                                            class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 4: Gear Oil -->
+            <div class="product-category" data-aos="fade-up">
+                <div class="category-header">
+                    <h3 class="category-title" data-i18n="cat_gear_oil">
+                        <i class="fas fa-cogs"></i> Gear Oil
+                    </h3>
+                    <div class="category-line"></div>
+                </div>
+                <div class="products-grid">
+                    <!-- Product: GL 140 1L - 1 White Offset -->
+                    <div class="product-card" data-product-id="gl-140-1l" data-aos="zoom-in">
+                        <div class="product-img">
+                            <img src="MISR OIL 1L.png" alt="GL 140 1L">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">GL - 140</h3>
+                            <div class="product-specs">
+                                <i class="fas fa-flask" style="color: #e74c3c;"></i>
+                                <span>LITERS 1</span>
+                                <i class="fas fa-cogs" style="color: #e74c3c;"></i>
+                                <span>1 WHITE OFFSET</span>
+                            </div>
+                            <div class="product-action-pill">
+                                <small class="currency">EGP</small>
+                                <span class="price">650</span>
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus" onclick="updateQty('gl-140-1l', -1, event)"><i
+                                            class="fas fa-minus"></i></button>
+                                    <span class="qty-count" data-id="gl-140-1l">0</span>
+                                    <button class="qty-btn plus" onclick="updateQty('gl-140-1l', 1, event)"><i
+                                            class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product: GL 140 4L - 1 White Offset -->
+                    <div class="product-card" data-product-id="gl-140-4l" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="product-img">
+                            <img src="MISR OIL 04L.png" alt="GL 140 4L">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">GL - 140</h3>
+                            <div class="product-specs">
+                                <i class="fas fa-flask" style="color: #e74c3c;"></i>
+                                <span>LITERS 4</span>
+                                <i class="fas fa-cogs" style="color: #e74c3c;"></i>
+                                <span>1 WHITE OFFSET</span>
+                            </div>
+                            <div class="product-action-pill">
+                                <small class="currency">EGP</small>
+                                <span class="price">710</span>
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus" onclick="updateQty('gl-140-4l', -1, event)"><i
+                                            class="fas fa-minus"></i></button>
+                                    <span class="qty-count" data-id="gl-140-4l">0</span>
+                                    <button class="qty-btn plus" onclick="updateQty('gl-140-4l', 1, event)"><i
+                                            class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product: GL 140 16L - 2 White -->
+                    <div class="product-card" data-product-id="gl-140-16l" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="product-img">
+                            <img src="MISR OIL 16L copy.png" alt="GL 140 16L">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">GL - 140</h3>
+                            <div class="product-specs">
+                                <i class="fas fa-flask" style="color: #e74c3c;"></i>
+                                <span>LITERS 16</span>
+                                <i class="fas fa-cogs" style="color: #e74c3c;"></i>
+                                <span>2 WHITE</span>
+                            </div>
+                            <div class="product-action-pill">
+                                <small class="currency">EGP</small>
+                                <span class="price">650</span>
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus" onclick="updateQty('gl-140-16l', -1, event)"><i
+                                            class="fas fa-minus"></i></button>
+                                    <span class="qty-count" data-id="gl-140-16l">0</span>
+                                    <button class="qty-btn plus" onclick="updateQty('gl-140-16l', 1, event)"><i
+                                            class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 5: CF Products -->
+            <div class="product-category" data-aos="fade-up">
+                <div class="category-header">
+                    <h3 class="category-title" data-i18n="cat_cf">
+                        <i class="fas fa-flask"></i> CF Products
+                    </h3>
+                    <div class="category-line"></div>
+                </div>
+                <div class="products-grid">
+                    <!-- Product: CF 50%:100% 20L -->
+                    <div class="product-card" data-product-id="cf-50-100-20l" data-aos="zoom-in">
+                        <div class="product-img">
+                            <img src="MISR OIL 20L copy.png" alt="CF 50%:100% 20L">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">CF 50%:100%</h3>
+                            <div class="product-specs">
+                                <i class="fas fa-flask" style="color: #e74c3c;"></i>
+                                <span>LITERS 20</span>
+                                <i class="fas fa-truck" style="color: #e74c3c;"></i>
+                                <span>RED/BLACK</span>
+                            </div>
+                            <div class="product-action-pill">
+                                <small class="currency">EGP</small>
+                                <span class="price">1,617</span>
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus" onclick="updateQty('cf-50-100-20l', -1, event)"><i
+                                            class="fas fa-minus"></i></button>
+                                    <span class="qty-count" data-id="cf-50-100-20l">0</span>
+                                    <button class="qty-btn plus" onclick="updateQty('cf-50-100-20l', 1, event)"><i
+                                            class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product: CF 20% 20L -->
+                    <div class="product-card" data-product-id="cf-20-20l" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="product-img">
+                            <img src="MISR OIL 20L copy (1).png" alt="CF 20% 20L">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">CF 20%</h3>
+                            <div class="product-specs">
+                                <i class="fas fa-flask" style="color: #e74c3c;"></i>
+                                <span>LITERS 20</span>
+                                <i class="fas fa-truck" style="color: #e74c3c;"></i>
+                                <span>RED/BLACK</span>
+                            </div>
+                            <div class="product-action-pill">
+                                <small class="currency">EGP</small>
+                                <span class="price">1,010</span>
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus" onclick="updateQty('cf-20-20l', -1, event)"><i
+                                            class="fas fa-minus"></i></button>
+                                    <span class="qty-count" data-id="cf-20-20l">0</span>
+                                    <button class="qty-btn plus" onclick="updateQty('cf-20-20l', 1, event)"><i
+                                            class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product: CF 1.6L - 1 Blue Offset -->
+                    <div class="product-card" data-product-id="cf-1-6l" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="product-img">
+                            <img src="product-logo-placeholder.png" alt="CF 1.6L">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">CF</h3>
+                            <div class="product-specs">
+                                <i class="fas fa-flask" style="color: #e74c3c;"></i>
+                                <span>LITERS 1.6</span>
+                                <i class="fas fa-truck" style="color: #e74c3c;"></i>
+                                <span>1 BLUE OFFSET</span>
+                            </div>
+                            <div class="product-action-pill">
+                                <small class="currency">EGP</small>
+                                <span class="price">680</span>
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus" onclick="updateQty('cf-1-6l', -1, event)"><i
+                                            class="fas fa-minus"></i></button>
+                                    <span class="qty-count" data-id="cf-1-6l">0</span>
+                                    <button class="qty-btn plus" onclick="updateQty('cf-1-6l', 1, event)"><i
+                                            class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Separator Products -> About -->
+    <div class="section-separator sep-white-mauve">
+    </div>
+
+    <!-- Product Modal Overlay -->
+    <div class="product-modal-overlay">
+        <div class="product-modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-grid">
+                <div class="modal-image">
+                    <div class="modal-image-main-wrap">
+                        <img src="" alt="Product Detail" id="modal-img">
+                    </div>
+                    <div class="modal-gallery-thumbs" id="modal-gallery-thumbs"></div>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title">TITLE</h2>
+                    <h4 id="modal-subtitle">SUBTITLE</h4>
+                    <div class="modal-features">
+                        <div class="features-ar">
+                            <h4>مميزات المنتج</h4>
+                            <ul id="modal-features-ar"></ul>
+                        </div>
+                        <div class="features-en">
+                            <h4>Product Features</h4>
+                            <ul id="modal-features-en"></ul>
+                        </div>
+                    </div>
+                    <div class="modal-action">
+                        <div class="modal-action-top">
+                            <span class="modal-price" id="modal-price">-- EGP</span>
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus" id="modal-minus"><i class="fas fa-minus"></i></button>
+                                <span class="qty-count" id="modal-qty">0</span>
+                                <button class="qty-btn plus" id="modal-plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <button class="btn-whatsapp-order" type="button" onclick="openOrderModal()">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-i18n="order_whatsapp_cart">إتمام الطلب عبر الواتساب</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Empty Cart Notice Popup -->
+    <div class="empty-cart-modal-overlay" id="empty-cart-modal-overlay" aria-hidden="true">
+        <div class="empty-cart-modal-backdrop" onclick="closeEmptyCartPopup()"></div>
+        <div class="empty-cart-modal-content">
+            <button type="button" class="empty-cart-modal-close" onclick="closeEmptyCartPopup()" aria-label="إغلاق">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="empty-cart-modal-icon-wrap">
+                <i class="fas fa-shopping-cart empty-cart-modal-icon"></i>
+            </div>
+            <h3 class="empty-cart-modal-title" data-i18n="empty_cart_modal_title">اختر منتجاتك أولاً</h3>
+            <p class="empty-cart-modal-message" data-i18n="empty_cart_modal_message">يجب اختيار منتجات من المتجر قبل إتمام الحجز. تصفح المنتجات واختر ما يناسبك ثم عد لإكمال الطلب.</p>
+            <button type="button" class="empty-cart-modal-btn" onclick="closeEmptyCartPopup(); document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });">
+                <i class="fas fa-box-open"></i>
+                <span data-i18n="empty_cart_modal_btn">تصفح المنتجات</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Contact Form Validation Popup -->
+    <div class="contact-validation-overlay" id="contact-validation-overlay" aria-hidden="true">
+        <div class="contact-validation-backdrop" onclick="closeContactValidationPopup()"></div>
+        <div class="contact-validation-content">
+            <button type="button" class="contact-validation-close" onclick="closeContactValidationPopup()" aria-label="إغلاق">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="contact-validation-icon-wrap">
+                <i class="fas fa-edit contact-validation-icon"></i>
+            </div>
+            <h3 class="contact-validation-title" data-i18n="contact_validation_title">أدخل بياناتك أولاً</h3>
+            <p class="contact-validation-message" data-i18n="contact_validation_message">يجب تعبئة الاسم والبريد الإلكتروني والرسالة حتى يمكن إرسال استفسارك.</p>
+            <button type="button" class="contact-validation-btn" onclick="closeContactValidationPopup()" data-i18n="contact_validation_btn">
+                حسناً
+            </button>
+        </div>
+    </div>
+
+    <!-- Order / WhatsApp Form Modal -->
+    <div class="order-modal-overlay" id="order-modal-overlay" aria-hidden="true">
+        <div class="order-modal-backdrop" onclick="closeOrderModal()"></div>
+        <div class="order-modal-content">
+            <button type="button" class="order-modal-close" onclick="closeOrderModal()" aria-label="إغلاق">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="order-modal-header">
+                <i class="fab fa-whatsapp order-modal-icon"></i>
+                <h3 class="order-modal-title" data-i18n="order_modal_title">إتمام الطلب عبر الواتساب</h3>
+                <p class="order-modal-subtitle" data-i18n="order_modal_subtitle">أدخل بياناتك وسنفتح لك محادثة الواتساب</p>
+            </div>
+            <form class="order-form" id="order-form" onsubmit="return submitOrderToWhatsApp(event)">
+                <div class="order-form-group">
+                    <label for="order-name" data-i18n="order_label_name">الاسم</label>
+                    <input type="text" id="order-name" name="name" placeholder="" required autocomplete="name" />
+                </div>
+                <div class="order-form-group">
+                    <label for="order-address" data-i18n="order_label_address">العنوان</label>
+                    <input type="text" id="order-address" name="address" placeholder="" required autocomplete="street-address" />
+                </div>
+                <div class="order-form-group">
+                    <label for="order-items" data-i18n="order_label_order">الطلب</label>
+                    <textarea id="order-items" name="order" rows="4" readonly placeholder="لم يتم اختيار منتجات"></textarea>
+                </div>
+                <button type="submit" class="order-submit-btn" id="order-submit-btn" disabled>
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-i18n="order_btn_send">إرسال إلى الواتساب</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-bg-elements">
+            <div class="glow-sphere"></div>
+            <div class="floating-drop drop-1"></div>
+            <div class="floating-drop drop-2"></div>
+        </div>
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="glass-card card-top" data-tilt>
+                        <i class="fas fa-check-circle"></i>
+                        <span data-i18n="glass_quality">جودة عالمية</span>
+                    </div>
+                    <div class="glass-card card-middle" data-tilt>
+                        <i class="fas fa-microchip"></i>
+                        <span data-i18n="glass_tech">ابتكار تقني</span>
+                    </div>
+                    <div class="glass-card card-bottom" data-tilt>
+                        <i class="fas fa-shield-alt"></i>
+                        <span data-i18n="glass_protection">حماية قصوى</span>
+                    </div>
+                    <div class="visual-main-wrapper">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                </div>
+                <div class="about-info" data-aos="fade-right">
+                    <div class="badge" data-i18n="about_badge">عن الشركة</div>
+                    <h2 data-i18n="about_title">مصر رويل <br><span>ريادة تكنولوجية</span></h2>
+                    <p class="lead" style="line-height: 1.8;" data-i18n="about_lead">مصر رويل هي شركة مصرية رائدة في
+                        مجال إنتاج زيوت الأساس
+                        المُعاد تدويرها ذات التصنيف (Group II).</p>
+                    <p style="margin-bottom: 30px;" data-i18n="about_desc">
+                        نعمل من خلال منظومة تصنيع متكاملة داخل مجمع مصر رويل الصناعي، الذي يعتمد على أحدث التقنيات
+                        العالمية لضمان أعلى مستويات الجودة والثبات في خواص الزيوت المنتجة.
+                    </p>
+
+                    <h3 style="color: var(--secondary-color); margin-bottom: 20px; font-weight: 700;"
+                        data-i18n="about_stages_title">مراحل الإنتاج داخل
+                        مصر رويل</h3>
+
+                    <ul class="about-stages-list">
+                        <li><i class="fas fa-filter"></i> <span data-i18n="stage_1">معالجة أولية فائقة</span></li>
+                        <li><i class="fas fa-flask"></i> <span data-i18n="stage_2">تكرير بتقنية Group II</span></li>
+                        <li><i class="fas fa-check-double"></i> <span data-i18n="stage_3">رقابة جودة صارمة</span></li>
+                    </ul>
+
+                    <div style="margin-top: 30px;">
+                        <a href="#contact" class="btn-glow" data-i18n="about_btn_contact">تواصل معنا</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separator About -> Team -->
+    <div class="section-separator sep-mauve-white">
+    </div>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 data-i18n="team_title">نخبة الخبراء</h2>
+                <div class="line"></div>
+            </div>
+            <div class="team-grid">
+                <div class="team-card-premium" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-bg" style="background-image: url('team_1.png');"></div>
+                    <div class="team-overlay">
+                        <div class="team-details">
+                            <h3 data-i18n="team_1_name">أحمد محمد</h3>
+                            <span data-i18n="team_1_role">المدير العام</span>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card-premium" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-bg" style="background-image: url('team_2.png');"></div>
+                    <div class="team-overlay">
+                        <div class="team-details">
+                            <h3 data-i18n="team_2_name">سارة علي</h3>
+                            <span data-i18n="team_2_role">مديرة التسويق</span>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card-premium" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-bg" style="background-image: url('product-logo-placeholder.png');"></div>
+                    <div class="team-overlay">
+                        <div class="team-details">
+                            <h3 data-i18n="team_3_name">ياسين أحمد</h3>
+                            <span data-i18n="team_3_role">مدير المبيعات</span>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separator Team -> Contact -->
+    <div class="section-separator sep-white-mauve">
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-split-wrapper" data-aos="fade-up">
+
+                <!-- Left Side: Info -->
+                <div class="contact-info-side">
+                    <h2 data-i18n="contact_title">تواصل معنا</h2>
+                    <p data-i18n="contact_subtitle">نحن هنا لخدمتك. لا تتردد في الاتصال بنا للحصول على أي استفسار.</p>
+
+                    <div class="contact-direct">
+                        <div class="direct-item">
+                            <div class="icon-circle"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h4 data-i18n="phone">الهاتف</h4>
+                                <p dir="ltr">+20 15 58040645</p>
+                            </div>
+                        </div>
+                        <div class="direct-item">
+                            <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4 data-i18n="email">البريد الإلكتروني</h4>
+                                <p>info@misroil.com.eg</p>
+                            </div>
+                        </div>
+                        <div class="direct-item">
+                            <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4 data-i18n="address">العنوان</h4>
+                                <p data-i18n="address_val">القاهرة، مصر</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Form -->
+                <div class="contact-form-side">
+                    <form id="contact-form" onsubmit="return false;">
+                        <div class="input-group">
+                            <input type="text" id="contact-name" name="name" required>
+                            <label data-i18n="form_name">الاسم بالكامل</label>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="contact-email" name="email" required>
+                            <label data-i18n="form_email">البريد الإلكتروني</label>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="contact-message" name="message" required></textarea>
+                            <label data-i18n="form_message">الرسالة</label>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="contact-form-actions">
+                            <button type="button" class="btn-contact-whatsapp" onclick="submitContactViaWhatsApp()">
+                                <i class="fab fa-whatsapp"></i>
+                                <span data-i18n="contact_send_whatsapp">إرسال عبر الواتساب</span>
+                            </button>
+                            <button type="button" class="btn-contact-email" onclick="submitContactViaEmail()">
+                                <i class="fas fa-envelope"></i>
+                                <span data-i18n="contact_send_email">إرسال عبر البريد</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Separator Contact -> Location -->
+    <div class="section-separator sep-mauve-white">
+    </div>
+
+    <!-- Location Section -->
+    <section class="location" id="location">
+        <div class="container">
+            <div class="map-container" data-aos="zoom-in" style="margin-top: 40px;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.453472304856!2d31.34018555!3d29.9951467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458350006b011c3%3A0x2942f1f25a1965e2!2zUTg3Rys5WEMg2LTYsdmD2Kkg2KjYqtix2Ygg2KfZiNmK2YQg2YTZhNiy2YrZiNiqINin2YTZhdi52K_ZhtmK2KnYjCDZgtiz2YUg2KfZhNiq2KjZitmG2Iwg2YXYrdin2YHYuNipINin2YTZgtin2YfYsdip!5e0!3m2!1sar!2seg!4v1737732686001!5m2!1sar!2seg"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separator Location -> Footer -->
+    <div class="section-separator sep-white-white" style="background: var(--white); height: 50px;">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container"
+            style="display: flex; flex-direction: column; align-items: center; gap: 20px; width: 100%; max-width: 100%; padding: 0;">
+            <img src="footer_logo_final_v2.png" alt="Misr Oil" class="footer-logo-full">
+
+            <div class="footer-social">
+                <a href="https://www.facebook.com/misroil.eg/" target="_blank" class="social-link facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/misroil.eg/" target="_blank" class="social-link instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/misroil-eg/" target="_blank" class="social-link linkedin"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.tiktok.com/@misroil.eg" target="_blank" class="social-link tiktok"><i
+                        class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@misroil-eg" target="_blank" class="social-link youtube"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+
+            <p data-i18n="footer_rights">&copy; 2024 جميع الحقوق محفوظة لشركة مصر أويل.</p>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Drawer -->
+    <div class="cart-drawer-overlay" onclick="toggleCartDrawer()"></div>
+    <div class="cart-drawer">
+        <div class="cart-drawer-header">
+            <h3><i class="fas fa-shopping-basket"></i> <span data-i18n="cart_title">سلة المشتريات</span></h3>
+            <button class="cart-close-btn" onclick="toggleCartDrawer()"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items-wrapper">
+            <!-- Dynamically populated -->
+            <div class="empty-cart-msg">
+                <i class="fas fa-cart-plus"></i>
+                <p data-i18n="empty_cart">سلتك فارغة حالياً</p>
+            </div>
+        </div>
+        <div class="cart-drawer-footer">
+            <div class="cart-summary">
+                <span data-i18n="total_items">إجمالي المنتجات:</span>
+                <span class="total-qty-val">0</span>
+            </div>
+            <div class="cart-summary total-price-row">
+                <span data-i18n="total_price">إجمالي السعر:</span>
+                <span class="total-price-val">0 EGP</span>
+            </div>
+            <button class="btn-order-whatsapp" type="button" onclick="openOrderModal()">
+                <i class="fab fa-whatsapp"></i>
+                <span data-i18n="order_whatsapp_cart">إتمام الطلب عبر الواتساب</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/201558040645" class="float-whatsapp" target="_blank" rel="noopener" aria-label="تواصل معنا على واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-follow"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
