@@ -2895,18 +2895,20 @@ footer p {
     }
 
     .modal-img-wrapper {
-        min-height: 400px;
-        height: 400px;
-        padding: 20px;
+        min-height: 500px;
+        height: auto;
+        padding: 30px 20px;
+        background-color: #ffffff;
     }
 
     .modal-img-wrapper img {
-        transform: scale(1.5);
-        max-height: 380px;
+        transform: scale(1.9);
+        max-height: 480px;
+        width: auto;
     }
 
     .modal-img-wrapper img:hover {
-        transform: scale(1.6);
+        transform: scale(2.0);
     }
 }
 
