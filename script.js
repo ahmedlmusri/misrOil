@@ -228,14 +228,19 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     window.toggleCartDrawer = function () {
+        const drawer = document.querySelector('.cart-drawer');
         const totalItems = Object.values(cart).reduce((a, b) => a + b, 0);
-        if (totalItems === 0) {
+
+        // If drawer is CLOSED and cart is EMPTY -> Prevent opening and show popup
+        if (!drawer.classList.contains('active') && totalItems === 0) {
             openEmptyCartPopup();
             return;
         }
-        document.querySelector('.cart-drawer').classList.toggle('active');
+
+        // precise selector usage to match existing style or variables if defined, but querySelector is safe here
+        drawer.classList.toggle('active');
         document.querySelector('.cart-drawer-overlay').classList.toggle('active');
-        document.body.style.overflow = document.querySelector('.cart-drawer').classList.contains('active') ? 'hidden' : '';
+        document.body.style.overflow = drawer.classList.contains('active') ? 'hidden' : '';
     };
 
     function parsePrice(priceStr) {
@@ -298,9 +303,9 @@ document.addEventListener('DOMContentLoaded', function () {
                                 <p>${qty} × <span data-i18n="product_unit">${currentLang === 'ar' ? 'قطعة' : 'Unit'}</span></p>
                             </div>
                             <div class="quantity-selector" style="transform: scale(0.8)">
-                                <button class="qty-btn minus" onclick="updateQty('${id}', -1, event)"><i class="fas fa-minus"></i></button>
+                                <button class="qty-btn minus" onclick="updateQty('${id}', -10, event)"><i class="fas fa-minus"></i></button>
                                 <span class="qty-count" data-id="${id}">${qty}</span>
-                                <button class="qty-btn plus" onclick="updateQty('${id}', 1, event)"><i class="fas fa-plus"></i></button>
+                                <button class="qty-btn plus" onclick="updateQty('${id}', 10, event)"><i class="fas fa-plus"></i></button>
                             </div>
                         </div>`;
                 }
@@ -684,12 +689,12 @@ document.addEventListener('DOMContentLoaded', function () {
         modalQtyDisplay.textContent = cart[productId] || 0;
 
         modalMinus.onclick = (e) => {
-            updateQty(productId, -1, e);
+            updateQty(productId, -10, e);
             modalQtyDisplay.textContent = cart[productId] || 0;
         };
 
         modalPlus.onclick = (e) => {
-            updateQty(productId, 1, e);
+            updateQty(productId, 10, e);
             modalQtyDisplay.textContent = cart[productId] || 0;
         };
 
