@@ -430,26 +430,76 @@ document.addEventListener('DOMContentLoaded', function () {
     const productsData = {
         'sn-300-tn': {
             title: 'SN 300 TN',
-            subtitle: 'Base Oil',
+            subtitle: 'Base Oil - Type 1',
             image: 'product-logo-placeholder.png',
-            gallery: ['product-logo-placeholder.png', 'public/images/basic-oil.png', 'product-logo-placeholder.png'],
+            variants: [
+                { src: 'product-logo-placeholder.png', price: '34k EGP', id: 'sn-300-tn' },
+                { src: 'public/images/basic-oil.png', price: '36k EGP', id: 'sn-300-tn-v2' },
+                { src: 'product-logo-placeholder.png', price: '38k EGP', id: 'sn-300-tn-v3' }
+            ],
             price: '34k EGP',
             featuresAr: [
-                'زيت أساس متوسط اللزوجة عالي الجودة',
-                'يُستخدم كخام أساسي في تصنيع مختلف أنواع الزيوت: زيوت المحركات – زيوت التروس – الزيوت الهيدروليكية',
-                'ثبات ممتاز وأداء موثوق لمختلف التطبيقات الصناعية'
+                'زيت أساس متوسط اللزوجة عالي الجودة (اقتصادي)',
+                'يُستخدم كخام أساسي في تصنيع مختلف أنواع الزيوت',
+                'يعتبر خياراً مثالياً للاستخدامات العامة'
             ],
             featuresEn: [
-                'High quality medium viscosity base oil',
-                'Used as base material for: Engine oils - Gear oils - Hydraulic oils',
-                'Excellent stability and reliable performance for various industrial applications'
+                'High quality medium viscosity base oil (Economy)',
+                'Used as base material for various oils',
+                'Ideal choice for general applications'
+            ]
+        },
+        'sn-300-tn-v2': {
+            title: 'SN 300 TN',
+            subtitle: 'Base Oil - Type 2',
+            image: 'public/images/basic-oil.png',
+            variants: [
+                { src: 'public/images/basic-oil.png', price: '36k EGP', id: 'sn-300-tn-v2' },
+                { src: 'product-logo-placeholder.png', price: '34k EGP', id: 'sn-300-tn' },
+                { src: 'product-logo-placeholder.png', price: '38k EGP', id: 'sn-300-tn-v3' }
+            ],
+            price: '36k EGP',
+            featuresAr: [
+                'زيت أساس محسن عالي الجودة',
+                'أداء أفضل في درجات الحرارة العالية',
+                'ثبات كيميائي ممتاز لعمليات التصنيع الدقيقة'
+            ],
+            featuresEn: [
+                'Enhanced high quality base oil',
+                'Better performance at high temperatures',
+                'Excellent chemical stability for precision manufacturing'
+            ]
+        },
+        'sn-300-tn-v3': {
+            title: 'SN 300 TN',
+            subtitle: 'Base Oil - Premium',
+            image: 'product-logo-placeholder.png',
+            variants: [
+                { src: 'product-logo-placeholder.png', price: '38k EGP', id: 'sn-300-tn-v3' },
+                { src: 'product-logo-placeholder.png', price: '34k EGP', id: 'sn-300-tn' },
+                { src: 'public/images/basic-oil.png', price: '36k EGP', id: 'sn-300-tn-v2' }
+            ],
+            price: '38k EGP',
+            featuresAr: [
+                'زيت أساس بريميوم فائق النقاء',
+                'أعلى درجات اللزوجة والثبات الحراري',
+                'مخصص للتطبيقات الصناعية المتقدمة وزيوت المحركات الحديثة'
+            ],
+            featuresEn: [
+                'Premium ultra-pure base oil',
+                'Highest viscosity and thermal stability',
+                'Dedicated for advanced industrial applications and modern engine oils'
             ]
         },
         'cd-50-tn': {
             title: 'CD 50 TN',
             subtitle: 'Super Diesel',
             image: 'product-logo-placeholder.png',
-            gallery: ['product-logo-placeholder.png', 'MISR OIL 20L copy.png', 'MISR OIL 4L copy.png'],
+            variants: [
+                { src: 'product-logo-placeholder.png', price: '40k EGP', id: 'cd-50-tn' },
+                { src: 'MISR OIL 20L copy.png', price: '40k EGP', id: 'cd-50-tn-v2' },
+                { src: 'MISR OIL 4L copy.png', price: '40k EGP', id: 'cd-50-tn-v3' }
+            ],
             price: '40k EGP',
             featuresAr: [
                 'زيت محركات ديزل (Diesel Engine Oil) تصنيف من API لمحركات الديزل',
@@ -462,11 +512,57 @@ document.addEventListener('DOMContentLoaded', function () {
                 'Used in higher temperatures or heavy loads'
             ]
         },
+        'cd-50-tn-v2': {
+            title: 'CD 50 TN',
+            subtitle: 'Super Diesel - 20L Jerrycan',
+            image: 'MISR OIL 20L copy.png',
+            variants: [
+                { src: 'MISR OIL 20L copy.png', price: '40k EGP', id: 'cd-50-tn-v2' },
+                { src: 'product-logo-placeholder.png', price: '40k EGP', id: 'cd-50-tn' },
+                { src: 'MISR OIL 4L copy.png', price: '40k EGP', id: 'cd-50-tn-v3' }
+            ],
+            price: '40k EGP',
+            featuresAr: [
+                'عبوة 20 لتر عملية للاستخدام التجاري',
+                'زيت محركات ديزل عالي الأداء',
+                'توفير في التكلفة للكميات الكبيرة'
+            ],
+            featuresEn: [
+                'Practical 20L jerrycan for commercial use',
+                'High performance diesel engine oil',
+                'Cost saving for large quantities'
+            ]
+        },
+        'cd-50-tn-v3': {
+            title: 'CD 50 TN',
+            subtitle: 'Super Diesel - 4L Jerrycan',
+            image: 'MISR OIL 4L copy.png',
+            variants: [
+                { src: 'MISR OIL 4L copy.png', price: '40k EGP', id: 'cd-50-tn-v3' },
+                { src: 'product-logo-placeholder.png', price: '40k EGP', id: 'cd-50-tn' },
+                { src: 'MISR OIL 20L copy.png', price: '40k EGP', id: 'cd-50-tn-v2' }
+            ],
+            price: '40k EGP',
+            featuresAr: [
+                'عبوة 4 لتر مناسبة للتغيير السريع',
+                'زيت محركات ديزل موثوق',
+                'سهولة في التخزين والنقل'
+            ],
+            featuresEn: [
+                '4L jerrycan suitable for quick changes',
+                'Reliable diesel engine oil',
+                'Easy storage and transport'
+            ]
+        },
         'cd-20l': {
             title: 'CD - SC 20L',
             subtitle: 'Super Diesel',
             image: 'MISR OIL 20L copy.png',
-            gallery: ['MISR OIL 20L copy.png', 'MISR OIL 4L copy.png', 'MISR OIL 1L.png'],
+            variants: [
+                { src: 'MISR OIL 20L copy.png', price: '760 EGP', id: 'cd-20l' },
+                { src: 'MISR OIL 4L copy.png', price: '695 EGP', id: 'cd-4l' },
+                { src: 'MISR OIL 1L.png', price: '610 EGP', id: 'cd-1l' }
+            ],
             price: '760 EGP',
             featuresAr: [
                 'الأحجام: 20 لتر',
@@ -485,7 +581,11 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'CD - SC 4L',
             subtitle: 'Super Diesel',
             image: 'MISR OIL 4L copy.png',
-            gallery: ['MISR OIL 4L copy.png', 'MISR OIL 20L copy.png', 'MISR OIL 1L.png'],
+            variants: [
+                { src: 'MISR OIL 4L copy.png', price: '695 EGP', id: 'cd-4l' },
+                { src: 'MISR OIL 20L copy.png', price: '760 EGP', id: 'cd-20l' },
+                { src: 'MISR OIL 1L.png', price: '610 EGP', id: 'cd-1l' }
+            ],
             price: '695 EGP',
             featuresAr: [
                 'الأحجام: 4 لتر',
@@ -504,7 +604,11 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'CD - SC 1L',
             subtitle: 'Super Diesel',
             image: 'MISR OIL 1L.png',
-            gallery: ['MISR OIL 1L.png', 'MISR OIL 4L copy.png', 'MISR OIL 20L copy.png'],
+            variants: [
+                { src: 'MISR OIL 1L.png', price: '610 EGP', id: 'cd-1l' },
+                { src: 'MISR OIL 4L copy.png', price: '695 EGP', id: 'cd-4l' },
+                { src: 'MISR OIL 20L copy.png', price: '760 EGP', id: 'cd-20l' }
+            ],
             price: '610 EGP',
             featuresAr: [
                 'الأحجام: 1 لتر',
@@ -523,7 +627,11 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Hydraulic ISO 68',
             subtitle: '16L Yellow - 1',
             image: 'MISR OIL 16L copy.png',
-            gallery: ['MISR OIL 16L copy.png', 'MISR OIL 16L copy (1).png', 'MISR OIL 20L copy.png'],
+            variants: [
+                { src: 'MISR OIL 16L copy.png', price: '610 EGP', id: 'hyd-68-1' },
+                { src: 'MISR OIL 16L copy (1).png', price: '595 EGP', id: 'hyd-68-2' },
+                { src: 'MISR OIL 20L copy.png', price: '610 EGP' }
+            ],
             price: '610 EGP',
             featuresAr: [
                 'الحجم: 16 لتر',
@@ -540,7 +648,11 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Hydraulic ISO 68',
             subtitle: '16L Yellow - 2',
             image: 'MISR OIL 16L copy (1).png',
-            gallery: ['MISR OIL 16L copy (1).png', 'MISR OIL 16L copy.png', 'MISR OIL 04L.png'],
+            variants: [
+                { src: 'MISR OIL 16L copy (1).png', price: '595 EGP', id: 'hyd-68-2' },
+                { src: 'MISR OIL 16L copy.png', price: '610 EGP', id: 'hyd-68-1' },
+                { src: 'MISR OIL 04L.png', price: '595 EGP' }
+            ],
             price: '595 EGP',
             featuresAr: [
                 'الحجم: 16 لتر',
@@ -557,7 +669,11 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'GL - 140',
             subtitle: '1L White Offset',
             image: 'MISR OIL 1L.png',
-            gallery: ['MISR OIL 1L.png', 'MISR OIL 04L.png', 'MISR OIL 16L copy.png'],
+            variants: [
+                { src: 'MISR OIL 1L.png', price: '650 EGP', id: 'gl-140-1l' },
+                { src: 'MISR OIL 04L.png', price: '710 EGP', id: 'gl-140-4l' },
+                { src: 'MISR OIL 16L copy.png', price: '650 EGP', id: 'gl-140-16l' }
+            ],
             price: '650 EGP',
             featuresAr: [
                 'الأحجام: 1 لتر كارتونة',
@@ -576,7 +692,11 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'GL - 140',
             subtitle: '4L White Offset',
             image: 'MISR OIL 04L.png',
-            gallery: ['MISR OIL 04L.png', 'MISR OIL 1L.png', 'MISR OIL 16L copy.png'],
+            variants: [
+                { src: 'MISR OIL 04L.png', price: '710 EGP', id: 'gl-140-4l' },
+                { src: 'MISR OIL 1L.png', price: '650 EGP', id: 'gl-140-1l' },
+                { src: 'MISR OIL 16L copy.png', price: '650 EGP', id: 'gl-140-16l' }
+            ],
             price: '710 EGP',
             featuresAr: [
                 'الأحجام: 4 لتر كارتونة',
@@ -595,7 +715,11 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'GL - 140',
             subtitle: '16L White',
             image: 'MISR OIL 16L copy.png',
-            gallery: ['MISR OIL 16L copy.png', 'MISR OIL 04L.png', 'MISR OIL 1L.png'],
+            variants: [
+                { src: 'MISR OIL 16L copy.png', price: '650 EGP', id: 'gl-140-16l' },
+                { src: 'MISR OIL 04L.png', price: '710 EGP', id: 'gl-140-4l' },
+                { src: 'MISR OIL 1L.png', price: '650 EGP', id: 'gl-140-1l' }
+            ],
             price: '650 EGP',
             featuresAr: [
                 'الأحجام: 16 لتر',
@@ -614,7 +738,11 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'CF 50%:100%',
             subtitle: '20L Red/Black',
             image: 'MISR OIL 20L copy.png',
-            gallery: ['MISR OIL 20L copy.png', 'MISR OIL 20L copy (1).png', 'MISR OIL 4L copy.png'],
+            variants: [
+                { src: 'MISR OIL 20L copy.png', price: '1,617 EGP', id: 'cf-50-100-20l' },
+                { src: 'MISR OIL 20L copy (1).png', price: '1,617 EGP' },
+                { src: 'MISR OIL 4L copy.png', price: '1,617 EGP' }
+            ],
             price: '1,617 EGP',
             featuresAr: ['حجم 20 لتر', 'جالون أحمر / أسود'],
             featuresEn: ['Size 20 Liters', 'Red / Black Jerrycan']
@@ -623,7 +751,11 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'CF 20%',
             subtitle: '20L Red/Black',
             image: 'MISR OIL 20L copy (1).png',
-            gallery: ['MISR OIL 20L copy (1).png', 'MISR OIL 20L copy.png', 'MISR OIL 1L.png'],
+            variants: [
+                { src: 'MISR OIL 20L copy (1).png', price: '1,010 EGP', id: 'cf-20-20l' },
+                { src: 'MISR OIL 20L copy.png', price: '1,010 EGP' },
+                { src: 'MISR OIL 1L.png', price: '1,010 EGP' }
+            ],
             price: '1,010 EGP',
             featuresAr: ['حجم 20 لتر', 'جالون أحمر / أسود'],
             featuresEn: ['Size 20 Liters', 'Red / Black Jerrycan']
@@ -632,7 +764,11 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'CF',
             subtitle: '1.6L Blue Offset',
             image: 'product-logo-placeholder.png',
-            gallery: ['product-logo-placeholder.png', 'MISR OIL 1L.png', 'MISR OIL 04L.png'],
+            variants: [
+                { src: 'product-logo-placeholder.png', price: '680 EGP', id: 'cf-1-6l' },
+                { src: 'MISR OIL 1L.png', price: '680 EGP' },
+                { src: 'MISR OIL 04L.png', price: '680 EGP' }
+            ],
             price: '680 EGP',
             featuresAr: ['حجم 1.6 لتر', 'أوفست أزرق'],
             featuresEn: ['Size 1.6 Liters', 'Blue Offset']
@@ -645,58 +781,128 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const mainImg = document.getElementById('modal-img');
         const thumbsContainer = document.getElementById('modal-gallery-thumbs');
-        const gallery = product.gallery || [product.image, product.image, product.image];
+        const priceEl = document.getElementById('modal-price');
+
+        // Feature list rendering
+        const listAr = document.getElementById('modal-features-ar');
+        const listEn = document.getElementById('modal-features-en');
+        listAr.innerHTML = (product.featuresAr || []).map(item => `<li>${item}</li>`).join('');
+        listEn.innerHTML = (product.featuresEn || []).map(item => `<li>${item}</li>`).join('');
+
+        // Determine variants
+        let variants = [];
+        if (product.variants) {
+            variants = product.variants;
+        } else if (product.gallery) {
+            variants = product.gallery.map(src => ({ src: src, price: product.price }));
+        } else {
+            variants = [{ src: product.image, price: product.price }];
+        }
 
         // Determine which image should be primary when opening
         let activeIndex = 0;
         if (initialImageSrc) {
-            const foundIndex = gallery.findIndex(src => src === initialImageSrc);
+            const foundIndex = variants.findIndex(v => v.src === initialImageSrc);
             if (foundIndex !== -1) {
+                // If the user clicked a specific variant image that links to ANOTHER product (via id),
+                // we should probably open THAT product's modal instead of the current one.
+                // However, to keep it smooth, if we are just "viewing" it, we match index.
+                const targetVariant = variants[foundIndex];
+                if (targetVariant.id && targetVariant.id !== productId) {
+                    // Switch context immediately if opening from card
+                    openModal(targetVariant.id);
+                    return;
+                }
                 activeIndex = foundIndex;
             }
         }
 
-        mainImg.src = gallery[activeIndex] || product.image;
-        document.getElementById('modal-title').innerHTML = product.title;
-        document.getElementById('modal-subtitle').innerText = product.subtitle;
-        document.getElementById('modal-price').innerText = product.price.replace('EGP', '').trim();
-
-        thumbsContainer.innerHTML = gallery.map((src, i) => `
-            <button type="button" class="modal-gallery-thumb ${i === activeIndex ? 'active' : ''}" data-src="${src}" aria-label="View image ${i + 1}">
-                <img src="${src}" alt="">
-            </button>
+        // Render variants
+        thumbsContainer.innerHTML = variants.map((v, i) => `
+            <div class="modal-gallery-thumb ${i === activeIndex ? 'active' : ''}" data-index="${i}" role="button" tabindex="0">
+                <img src="${v.src}" alt="${product.title} - view ${i + 1}">
+            </div>
         `).join('');
 
-        thumbsContainer.querySelectorAll('.modal-gallery-thumb').forEach(thumb => {
-            thumb.addEventListener('click', function () {
-                const src = this.getAttribute('data-src');
-                mainImg.src = src;
-                thumbsContainer.querySelectorAll('.modal-gallery-thumb').forEach(t => t.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-
-        const listAr = document.getElementById('modal-features-ar');
-        const listEn = document.getElementById('modal-features-en');
-        listAr.innerHTML = product.featuresAr.map(item => `<li>${item}</li>`).join('');
-        listEn.innerHTML = product.featuresEn.map(item => `<li>${item}</li>`).join('');
+        // Update Modal Base Info
+        document.getElementById('modal-title').innerHTML = product.title;
+        document.getElementById('modal-subtitle').innerText = product.subtitle;
 
         // Modal quantity logic
         const modalQtyDisplay = document.getElementById('modal-qty');
         const modalMinus = document.getElementById('modal-minus');
         const modalPlus = document.getElementById('modal-plus');
 
-        modalQtyDisplay.textContent = cart[productId] || 0;
+        // Function to bind quantity buttons to the CURRENT visible product/variant
+        function bindQuantityButtons(currentId) {
+            modalQtyDisplay.textContent = cart[currentId] || 0;
+            modalMinus.onclick = (e) => {
+                updateQty(currentId, -10, e);
+                modalQtyDisplay.textContent = cart[currentId] || 0;
+            };
+            modalPlus.onclick = (e) => {
+                updateQty(currentId, 10, e);
+                modalQtyDisplay.textContent = cart[currentId] || 0;
+            };
+        }
 
-        modalMinus.onclick = (e) => {
-            updateQty(productId, -10, e);
-            modalQtyDisplay.textContent = cart[productId] || 0;
-        };
+        // View Update Function
+        function updateView(index) {
+            const variant = variants[index];
+            if (!variant) return;
 
-        modalPlus.onclick = (e) => {
-            updateQty(productId, 10, e);
-            modalQtyDisplay.textContent = cart[productId] || 0;
-        };
+            // If variant has a linked ID and it's DIFFERENT from current productId,
+            // we should SWITCH the modal context completely.
+            if (variant.id && variant.id !== productId) {
+                openModal(variant.id);
+                return;
+            }
+
+            // Update Image
+            mainImg.classList.remove('animate-fade-scale');
+            void mainImg.offsetWidth; // Force reflow
+            mainImg.src = variant.src;
+            mainImg.classList.add('animate-fade-scale');
+
+            // Update Price
+            const rawPrice = variant.price.replace('EGP', '').trim();
+            if (priceEl.innerText !== rawPrice) {
+                priceEl.classList.remove('animate-price-change');
+                void priceEl.offsetWidth; // Force reflow
+                priceEl.innerText = rawPrice;
+                priceEl.classList.add('animate-price-change');
+            } else {
+                priceEl.innerText = rawPrice;
+            }
+
+            // Update Active Thumb
+            thumbsContainer.querySelectorAll('.modal-gallery-thumb').forEach((t, i) => {
+                if (i === index) t.classList.add('active');
+                else t.classList.remove('active');
+            });
+
+            // Bind Cart Buttons to CURRENT ID (which is strictly productId here because we switched context if needed)
+            bindQuantityButtons(productId);
+
+            activeIndex = index;
+        }
+
+        // Add Click Listeners to Thumbs
+        thumbsContainer.querySelectorAll('.modal-gallery-thumb').forEach(thumb => {
+            thumb.addEventListener('click', function () {
+                const index = parseInt(this.getAttribute('data-index'));
+                updateView(index);
+            });
+        });
+
+        // Initialize View
+        // Note: we don't call updateView(activeIndex) here if it triggers context switch loops.
+        // But since we checked ID at start, we are safe.
+        // Just set initial image/price visually.
+        const initialVariant = variants[activeIndex];
+        mainImg.src = initialVariant.src;
+        priceEl.innerText = initialVariant.price.replace('EGP', '').trim();
+        bindQuantityButtons(productId);
 
         modalOverlay.classList.add('active');
         document.body.style.overflow = 'hidden';
