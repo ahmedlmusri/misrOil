@@ -2925,6 +2925,14 @@ footer p {
         padding: 12px 20px;
     }
 
+    #modal-img {
+        width: 100%;
+    }
+
+    .modal-image-main-wrap {
+        width: 400px;
+    }
+
     .contact-direct {
         gap: 20px;
     }
