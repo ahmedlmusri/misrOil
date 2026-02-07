@@ -1782,6 +1782,8 @@ section {
         width: 100%;
         justify-content: space-between;
         transform: none;
+        margin-left: 16px !important;
+        margin-right: 0px;
     }
 
     .modal-price {
