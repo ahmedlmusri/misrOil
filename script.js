@@ -431,11 +431,11 @@ document.addEventListener('DOMContentLoaded', function () {
         'sn-300-tn': {
             title: 'SN 300 TN',
             subtitle: 'Base Oil - Type 1',
-            image: 'product-logo-placeholder.png',
+            image: 'public/images/blue-tank.png',
             variants: [
-                { src: 'product-logo-placeholder.png', price: '34k EGP', id: 'sn-300-tn' },
+                { src: 'public/images/blue-tank.png', price: '34k EGP', id: 'sn-300-tn' },
                 { src: 'public/images/basic-oil.png', price: '36k EGP', id: 'sn-300-tn-v2' },
-                { src: 'product-logo-placeholder.png', price: '38k EGP', id: 'sn-300-tn-v3' }
+                { src: 'public/images/blue-tank.png', price: '38k EGP', id: 'sn-300-tn-v3' }
             ],
             price: '34k EGP',
             featuresAr: [
@@ -455,8 +455,8 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'public/images/basic-oil.png',
             variants: [
                 { src: 'public/images/basic-oil.png', price: '36k EGP', id: 'sn-300-tn-v2' },
-                { src: 'product-logo-placeholder.png', price: '34k EGP', id: 'sn-300-tn' },
-                { src: 'product-logo-placeholder.png', price: '38k EGP', id: 'sn-300-tn-v3' }
+                { src: 'public/images/blue-tank.png', price: '34k EGP', id: 'sn-300-tn' },
+                { src: 'public/images/blue-tank.png', price: '38k EGP', id: 'sn-300-tn-v3' }
             ],
             price: '36k EGP',
             featuresAr: [
@@ -473,10 +473,10 @@ document.addEventListener('DOMContentLoaded', function () {
         'sn-300-tn-v3': {
             title: 'SN 300 TN',
             subtitle: 'Base Oil - Premium',
-            image: 'product-logo-placeholder.png',
+            image: 'public/images/blue-tank.png',
             variants: [
-                { src: 'product-logo-placeholder.png', price: '38k EGP', id: 'sn-300-tn-v3' },
-                { src: 'product-logo-placeholder.png', price: '34k EGP', id: 'sn-300-tn' },
+                { src: 'public/images/blue-tank.png', price: '38k EGP', id: 'sn-300-tn-v3' },
+                { src: 'public/images/blue-tank.png', price: '34k EGP', id: 'sn-300-tn' },
                 { src: 'public/images/basic-oil.png', price: '36k EGP', id: 'sn-300-tn-v2' }
             ],
             price: '38k EGP',
@@ -494,9 +494,9 @@ document.addEventListener('DOMContentLoaded', function () {
         'cd-50-tn': {
             title: 'CD 50 TN',
             subtitle: 'Super Diesel',
-            image: 'product-logo-placeholder.png',
+            image: 'public/images/blue-tank.png',
             variants: [
-                { src: 'product-logo-placeholder.png', price: '40k EGP', id: 'cd-50-tn' },
+                { src: 'public/images/blue-tank.png', price: '40k EGP', id: 'cd-50-tn' },
                 { src: 'MISR OIL 20L copy.png', price: '40k EGP', id: 'cd-50-tn-v2' },
                 { src: 'MISR OIL 4L copy.png', price: '40k EGP', id: 'cd-50-tn-v3' }
             ],
@@ -518,7 +518,7 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'MISR OIL 20L copy.png',
             variants: [
                 { src: 'MISR OIL 20L copy.png', price: '40k EGP', id: 'cd-50-tn-v2' },
-                { src: 'product-logo-placeholder.png', price: '40k EGP', id: 'cd-50-tn' },
+                { src: 'public/images/blue-tank.png', price: '40k EGP', id: 'cd-50-tn' },
                 { src: 'MISR OIL 4L copy.png', price: '40k EGP', id: 'cd-50-tn-v3' }
             ],
             price: '40k EGP',
@@ -539,7 +539,7 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'MISR OIL 4L copy.png',
             variants: [
                 { src: 'MISR OIL 4L copy.png', price: '40k EGP', id: 'cd-50-tn-v3' },
-                { src: 'product-logo-placeholder.png', price: '40k EGP', id: 'cd-50-tn' },
+                { src: 'public/images/blue-tank.png', price: '40k EGP', id: 'cd-50-tn' },
                 { src: 'MISR OIL 20L copy.png', price: '40k EGP', id: 'cd-50-tn-v2' }
             ],
             price: '40k EGP',
@@ -763,9 +763,9 @@ document.addEventListener('DOMContentLoaded', function () {
         'cf-1-6l': {
             title: 'CF',
             subtitle: '1.6L Blue Offset',
-            image: 'product-logo-placeholder.png',
+            image: 'public/images/blue-tank.png',
             variants: [
-                { src: 'product-logo-placeholder.png', price: '680 EGP', id: 'cf-1-6l' },
+                { src: 'public/images/blue-tank.png', price: '680 EGP', id: 'cf-1-6l' },
                 { src: 'MISR OIL 1L.png', price: '680 EGP' },
                 { src: 'MISR OIL 04L.png', price: '680 EGP' }
             ],
@@ -851,41 +851,26 @@ document.addEventListener('DOMContentLoaded', function () {
             const variant = variants[index];
             if (!variant) return;
 
-            // If variant has a linked ID and it's DIFFERENT from current productId,
-            // we should SWITCH the modal context completely.
-            if (variant.id && variant.id !== productId) {
-                openModal(variant.id);
-                return;
-            }
-
             // Update Image
             mainImg.classList.remove('animate-fade-scale');
-            void mainImg.offsetWidth; // Force reflow
+            void mainImg.offsetWidth;
             mainImg.src = variant.src;
             mainImg.classList.add('animate-fade-scale');
 
             // Update Price
             const rawPrice = variant.price.replace('EGP', '').trim();
-            if (priceEl.innerText !== rawPrice) {
-                priceEl.classList.remove('animate-price-change');
-                void priceEl.offsetWidth; // Force reflow
-                priceEl.innerText = rawPrice;
-                priceEl.classList.add('animate-price-change');
-            } else {
-                priceEl.innerText = rawPrice;
-            }
+            priceEl.textContent = rawPrice;
 
-            // Update Active Thumb
-            thumbsContainer.querySelectorAll('.modal-gallery-thumb').forEach((t, i) => {
-                if (i === index) t.classList.add('active');
-                else t.classList.remove('active');
-            });
+            // Update Active Thumb (من غير تغيير ترتيب)
+            thumbsContainer.querySelectorAll('.modal-gallery-thumb')
+                .forEach((t, i) => t.classList.toggle('active', i === index));
 
-            // Bind Cart Buttons to CURRENT ID (which is strictly productId here because we switched context if needed)
+            // Bind quantity لنفس المنتج
             bindQuantityButtons(productId);
 
             activeIndex = index;
         }
+
 
         // Add Click Listeners to Thumbs
         thumbsContainer.querySelectorAll('.modal-gallery-thumb').forEach(thumb => {
