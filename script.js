@@ -497,8 +497,8 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'public/images/blue-tank.png',
             variants: [
                 { src: 'public/images/blue-tank.png', price: '40k EGP', id: 'cd-50-tn' },
-                { src: 'MISR OIL 20L copy.png', price: '40k EGP', id: 'cd-50-tn-v2' },
-                { src: 'MISR OIL 4L copy.png', price: '40k EGP', id: 'cd-50-tn-v3' }
+                { src: 'MISR OIL 20L copy.png', price: '30k EGP', id: 'cd-50-tn-v2' },
+                { src: 'MISR OIL 4L copy.png', price: '25k EGP', id: 'cd-50-tn-v3' }
             ],
             price: '40k EGP',
             featuresAr: [
@@ -517,9 +517,9 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: 'Super Diesel - 20L Jerrycan',
             image: 'MISR OIL 20L copy.png',
             variants: [
-                { src: 'MISR OIL 20L copy.png', price: '40k EGP', id: 'cd-50-tn-v2' },
+                { src: 'MISR OIL 20L copy.png', price: '30k EGP', id: 'cd-50-tn-v2' },
                 { src: 'public/images/blue-tank.png', price: '40k EGP', id: 'cd-50-tn' },
-                { src: 'MISR OIL 4L copy.png', price: '40k EGP', id: 'cd-50-tn-v3' }
+                { src: 'MISR OIL 4L copy.png', price: '25k EGP', id: 'cd-50-tn-v3' }
             ],
             price: '40k EGP',
             featuresAr: [
@@ -538,9 +538,9 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: 'Super Diesel - 4L Jerrycan',
             image: 'MISR OIL 4L copy.png',
             variants: [
-                { src: 'MISR OIL 4L copy.png', price: '40k EGP', id: 'cd-50-tn-v3' },
+                { src: 'MISR OIL 4L copy.png', price: '25k EGP', id: 'cd-50-tn-v3' },
                 { src: 'public/images/blue-tank.png', price: '40k EGP', id: 'cd-50-tn' },
-                { src: 'MISR OIL 20L copy.png', price: '40k EGP', id: 'cd-50-tn-v2' }
+                { src: 'MISR OIL 20L copy.png', price: '30k EGP', id: 'cd-50-tn-v2' }
             ],
             price: '40k EGP',
             featuresAr: [
