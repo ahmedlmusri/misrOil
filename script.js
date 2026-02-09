@@ -434,8 +434,6 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'public/images/blue-tank.png',
             variants: [
                 { src: 'public/images/blue-tank.png', price: '34k EGP', id: 'sn-300-tn' },
-                { src: 'public/images/basic-oil.png', price: '36k EGP', id: 'sn-300-tn-v2' },
-                { src: 'public/images/blue-tank.png', price: '38k EGP', id: 'sn-300-tn-v3' }
             ],
             price: '34k EGP',
             featuresAr: [
