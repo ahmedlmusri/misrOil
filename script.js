@@ -386,7 +386,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const orderText = orderItems.value.trim();
         if (!name || !address) return false;
 
-        const phoneNumber = '201558040645';
+        const phoneNumber = '201044022949';
         const nameLabel = currentLang === 'ar' ? 'الاسم' : 'Name';
         const addressLabel = currentLang === 'ar' ? 'العنوان' : 'Address';
         const orderLabel = currentLang === 'ar' ? 'الطلب' : 'Order';
@@ -433,9 +433,9 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: 'Base Oil - Type 1',
             image: 'public/images/blue-tank.png',
             variants: [
-                { src: 'public/images/blue-tank.png', price: '34k EGP', id: 'sn-300-tn' },
+                { src: 'public/images/blue-tank.png', price: '', id: 'sn-300-tn' },
             ],
-            price: '34k EGP',
+            price: '',
             featuresAr: [
                 'زيت أساس متوسط اللزوجة عالي الجودة (اقتصادي)',
                 'يُستخدم كخام أساسي في تصنيع مختلف أنواع الزيوت',
@@ -452,9 +452,9 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: 'Base Oil - Type 2',
             image: 'public/images/blue-tank.png',
             variants: [
-                { src: 'public/images/blue-tank.png', price: '36k EGP', id: 'sn-300-tn-v2' },
+                { src: 'public/images/blue-tank.png', price: '', id: 'sn-300-tn-v2' },
             ],
-            price: '36k EGP',
+            price: '',
             featuresAr: [
                 'زيت أساس محسن عالي الجودة',
                 'أداء أفضل في درجات الحرارة العالية',
@@ -471,11 +471,11 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: 'Base Oil - Premium',
             image: 'public/images/blue-tank.png',
             variants: [
-                { src: 'public/images/blue-tank.png', price: '38k EGP', id: 'sn-300-tn-v3' },
-                { src: 'public/images/blue-tank.png', price: '34k EGP', id: 'sn-300-tn' },
-                { src: 'public/images/basic-oil.png', price: '36k EGP', id: 'sn-300-tn-v2' }
+                { src: 'public/images/blue-tank.png', price: '', id: 'sn-300-tn-v3' },
+                { src: 'public/images/blue-tank.png', price: '', id: 'sn-300-tn' },
+                { src: 'public/images/basic-oil.png', price: '', id: 'sn-300-tn-v2' }
             ],
-            price: '38k EGP',
+            price: '',
             featuresAr: [
                 'زيت أساس بريميوم فائق النقاء',
                 'أعلى درجات اللزوجة والثبات الحراري',
@@ -492,9 +492,9 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: 'Super Diesel',
             image: 'public/images/blue-tank.png',
             variants: [
-                { src: 'public/images/blue-tank.png', price: '40k EGP', id: 'cd-50-tn' },
+                { src: 'public/images/blue-tank.png', price: '', id: 'cd-50-tn' },
             ],
-            price: '40k EGP',
+            price: '',
             featuresAr: [
                 'زيت محركات ديزل (Diesel Engine Oil) تصنيف من API لمحركات الديزل',
                 'مناسب لمحركات ديزل قديمة ومتوسطة الحمل',
@@ -511,11 +511,11 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: 'Super Diesel - 20L Jerrycan',
             image: 'MISR OIL 20L copy.png',
             variants: [
-                { src: 'MISR OIL 20L copy.png', price: '30k EGP', id: 'cd-50-tn-v2' },
-                { src: 'public/images/blue-tank.png', price: '40k EGP', id: 'cd-50-tn' },
-                { src: 'MISR OIL 4L copy.png', price: '25k EGP', id: 'cd-50-tn-v3' }
+                { src: 'MISR OIL 20L copy.png', price: '', id: 'cd-50-tn-v2' },
+                { src: 'public/images/blue-tank.png', price: '', id: 'cd-50-tn' },
+                { src: 'MISR OIL 4L copy.png', price: '', id: 'cd-50-tn-v3' }
             ],
-            price: '40k EGP',
+            price: '',
             featuresAr: [
                 'عبوة 20 لتر عملية للاستخدام التجاري',
                 'زيت محركات ديزل عالي الأداء',
@@ -532,11 +532,11 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: 'Super Diesel - 4L Jerrycan',
             image: 'MISR OIL 4L copy.png',
             variants: [
-                { src: 'MISR OIL 4L copy.png', price: '25k EGP', id: 'cd-50-tn-v3' },
-                { src: 'public/images/blue-tank.png', price: '40k EGP', id: 'cd-50-tn' },
-                { src: 'MISR OIL 20L copy.png', price: '30k EGP', id: 'cd-50-tn-v2' }
+                { src: 'MISR OIL 4L copy.png', price: '', id: 'cd-50-tn-v3' },
+                { src: 'public/images/blue-tank.png', price: '', id: 'cd-50-tn' },
+                { src: 'MISR OIL 20L copy.png', price: '', id: 'cd-50-tn-v2' }
             ],
-            price: '40k EGP',
+            price: '',
             featuresAr: [
                 'عبوة 4 لتر مناسبة للتغيير السريع',
                 'زيت محركات ديزل موثوق',
@@ -553,10 +553,10 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: 'Super Diesel',
             image: 'public/images/CD 20L.png',
             variants: [
-                { src: 'public/images/CD 20L.png', price: '760 EGP', id: 'cd-20l' },
-                { src: 'public/images/CD Black 20 L.png', price: '260 EGP', id: 'cd-20l-black' },
+                { src: 'public/images/CD 20L.png', price: '', id: 'cd-20l' },
+                { src: 'public/images/CD Black 20 L.png', price: '', id: 'cd-20l-black' },
             ],
-            price: '760 EGP',
+            price: '',
             featuresAr: [
                 'الأحجام: 20 لتر',
                 'للسيارات الديزل موديل 2010 وما قبل (غيار كامل) — قدرة من 800 إلى 1000 كم',
@@ -575,10 +575,10 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: 'Super Diesel',
             image: 'public/images/CD 4 L.png',
             variants: [
-                { src: 'public/images/CD 4 L.png', price: '695 EGP', id: 'cd-4l' },
-                { src: 'public/images/CD 4 L 4 PCS.png', price: '760 EGP', id: 'cd-4l-1' },
+                { src: 'public/images/CD 4 L.png', price: '', id: 'cd-4l' },
+                { src: 'public/images/CD 4 L 4 PCS.png', price: '', id: 'cd-4l-1' },
             ],
-            price: '695 EGP',
+            price: '',
             featuresAr: [
                 'الأحجام: 4 لتر',
                 'للسيارات الديزل موديل 2010 وما قبل (غيار كامل) — قدرة من 800 إلى 1000 كم',
@@ -597,11 +597,11 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: 'Super Diesel',
             image: 'public/images/CD 1 L Red.png',
             variants: [
-                { src: 'public/images/CD 1 L Red.png', price: '610 EGP', id: 'cd-1l' },
-                { src: 'public/images/CD 1 L.png', price: '695 EGP', id: 'cd-1l-2' },
-                { src: 'public/images/CD 1 L 12 PCS.png', price: '760 EGP', id: 'cd-1l-3' }
+                { src: 'public/images/CD 1 L Red.png', price: '', id: 'cd-1l' },
+                { src: 'public/images/CD 1 L.png', price: '', id: 'cd-1l-2' },
+                { src: 'public/images/CD 1 L 12 PCS.png', price: '', id: 'cd-1l-3' }
             ],
-            price: '610 EGP',
+            price: '',
             featuresAr: [
                 'الأحجام: 1 لتر',
                 'للسيارات الديزل موديل 2010 وما قبل (غيار كامل) — قدرة من 800 إلى 1000 كم',
@@ -620,9 +620,9 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: '16L Yellow - 1',
             image: 'public/images/HYD Yellow16L.png',
             variants: [
-                { src: 'public/images/HYD Yellow16L.png', price: '610 EGP', id: 'hyd-68-1' },
+                { src: 'public/images/HYD Yellow16L.png', price: '', id: 'hyd-68-1' },
             ],
-            price: '610 EGP',
+            price: '',
             featuresAr: [
                 'الحجم: 16 لتر',
                 'المعدات موديل 2000 وما قبل (غيار كامل)',
@@ -639,11 +639,11 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: '16L Yellow - 2',
             image: 'MISR OIL 16L copy (1).png',
             variants: [
-                { src: 'MISR OIL 16L copy (1).png', price: '595 EGP', id: 'hyd-68-2' },
-                { src: 'MISR OIL 16L copy.png', price: '610 EGP', id: 'hyd-68-1' },
-                { src: 'MISR OIL 04L.png', price: '595 EGP' }
+                { src: 'MISR OIL 16L copy (1).png', price: '', id: 'hyd-68-2' },
+                { src: 'MISR OIL 16L copy.png', price: '', id: 'hyd-68-1' },
+                { src: 'MISR OIL 04L.png', price: '' }
             ],
-            price: '595 EGP',
+            price: '',
             featuresAr: [
                 'الحجم: 16 لتر',
                 'المعدات موديل 2000 وما قبل (غيار كامل)',
@@ -660,9 +660,9 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: '1L White Offset',
             image: 'public/images/GL 140 1L.png',
             variants: [
-                { src: 'public/images/GL 140 1L.png', price: '650 EGP', id: 'gl-140-1l' },
+                { src: 'public/images/GL 140 1L.png', price: '', id: 'gl-140-1l' },
             ],
-            price: '650 EGP',
+            price: '',
             featuresAr: [
                 'الأحجام: 1 لتر كارتونة',
                 'سيارات الديزل موديل 2016 وما قبل (غيار كامل)',
@@ -681,9 +681,9 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: '4L White Offset',
             image: 'public/images/GL 140 4L.png',
             variants: [
-                { src: 'public/images/GL 140 4L.png', price: '710 EGP', id: 'gl-140-4l' },
+                { src: 'public/images/GL 140 4L.png', price: '', id: 'gl-140-4l' },
             ],
-            price: '710 EGP',
+            price: '',
             featuresAr: [
                 'الأحجام: 4 لتر كارتونة',
                 'سيارات الديزل موديل 2016 وما قبل (غيار كامل)',
@@ -702,9 +702,9 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: '16L White',
             image: 'public/images/GL White 140 16L.png',
             variants: [
-                { src: 'public/images/GL White 140 16L.png', price: '650 EGP', id: 'gl-140-16l' },
+                { src: 'public/images/GL White 140 16L.png', price: '', id: 'gl-140-16l' },
             ],
-            price: '650 EGP',
+            price: '',
             featuresAr: [
                 'الأحجام: 16 لتر',
                 'سيارات الديزل موديل 2016 وما قبل (غيار كامل)',
@@ -723,11 +723,11 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: '20L Red/Black',
             image: 'MISR OIL 20L copy.png',
             variants: [
-                { src: 'MISR OIL 20L copy.png', price: '1,617 EGP', id: 'cf-50-100-20l' },
-                { src: 'MISR OIL 20L copy (1).png', price: '1,617 EGP' },
-                { src: 'MISR OIL 4L copy.png', price: '1,617 EGP' }
+                { src: 'MISR OIL 20L copy.png', price: '', id: 'cf-50-100-20l' },
+                { src: 'MISR OIL 20L copy (1).png', price: '' },
+                { src: 'MISR OIL 4L copy.png', price: '' }
             ],
-            price: '1,617 EGP',
+            price: '',
             featuresAr: ['حجم 20 لتر', 'جالون أحمر / أسود'],
             featuresEn: ['Size 20 Liters', 'Red / Black Jerrycan']
         },
@@ -736,10 +736,10 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: '20L Red/Black',
             image: 'public/images/cf-20-white.png',
             variants: [
-                { src: 'public/images/cf-20-white.png', price: '1,010 EGP' },
-                { src: 'MISR OIL 20L copy (1).png', price: '1,010 EGP', id: 'cf-20-20l' }
+                { src: 'public/images/cf-20-white.png', price: '' },
+                { src: 'MISR OIL 20L copy (1).png', price: '', id: 'cf-20-20l' }
             ],
-            price: '1,010 EGP',
+            price: '',
             featuresAr: ['حجم 20 لتر', 'جالون أبيض / أحمر'],
             featuresEn: ['Size 20 Liters', 'White / Red Jerrycan']
         },
@@ -748,10 +748,10 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: '20L Blue/Black',
             image: 'public/images/CF Blue 20 L.png',
             variants: [
-                { src: 'public/images/CF Blue 20 L.png', price: '1,010 EGP', id: 'cf-50-20l' },
-                { src: 'public/images/CF Black 20 L.png', price: '1,010 EGP' },
+                { src: 'public/images/CF Blue 20 L.png', price: '', id: 'cf-50-20l' },
+                { src: 'public/images/CF Black 20 L.png', price: '' },
             ],
-            price: '1,010 EGP',
+            price: '',
             featuresAr: ['حجم 20 لتر', 'جالون أزرق / أسود'],
             featuresEn: ['Size 20 Liters', 'Blue / Black Jerrycan']
         },
@@ -760,9 +760,9 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: '1.6L Blue Offset',
             image: 'public/images/CF  1.6 L 12 PCS.png',
             variants: [
-                { src: 'public/images/CF  1.6 L 12 PCS.png', price: '680 EGP', id: 'cf-1-6l' },
+                { src: 'public/images/CF  1.6 L 12 PCS.png', price: '', id: 'cf-1-6l' },
             ],
-            price: '680 EGP',
+            price: '',
             featuresAr: ['حجم 1.6 لتر', 'أوفست أزرق'],
             featuresEn: ['Size 1.6 Liters', 'Blue Offset']
         }
@@ -1053,7 +1053,7 @@ function submitContactViaWhatsApp() {
         openContactValidationPopup();
         return;
     }
-    const phoneNumber = '201558040645';
+    const phoneNumber = '201044022949';
     const text = currentLang === 'ar'
         ? `استفسار من الموقع:\nالاسم: ${name}\nالبريد: ${email}\nالرسالة: ${message}`
         : `Inquiry from website:\nName: ${name}\nEmail: ${email}\nMessage: ${message}`;
@@ -1077,7 +1077,7 @@ function submitContactViaEmail() {
 
 // WhatsApp Order Function
 function orderProduct(productName) {
-    const phoneNumber = '201558040645'; // +20 15 58040645 without + and spaces
+    const phoneNumber = '201044022949'; // +20 15 58040645 without + and spaces
     const message = encodeURIComponent(`مرحباً، أريد طلب المنتج: ${productName}\nHello, I would like to order: ${productName}`);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');
