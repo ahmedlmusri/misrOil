@@ -1036,13 +1036,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-function openContactValidationPopup() {
+function openContactValidationPopup(state = 'validation') {
     const overlay = document.getElementById('contact-validation-overlay');
-    if (overlay) {
-        overlay.classList.add('active');
-        overlay.setAttribute('aria-hidden', 'false');
-        document.body.style.overflow = 'hidden';
+    if (!overlay) return;
+    const config = {
+        validation: { icon: 'fa-edit', title: 'contact_validation_title', message: 'contact_validation_message' },
+        success: { icon: 'fa-check-circle', title: 'contact_success_title', message: 'contact_success_message' },
+        error: { icon: 'fa-exclamation-circle', title: 'contact_error_title', message: 'contact_error_message' }
+    }[state];
+    const icon = overlay.querySelector('.contact-validation-icon');
+    const title = overlay.querySelector('.contact-validation-title');
+    const message = overlay.querySelector('.contact-validation-message');
+    if (icon) icon.className = `fas ${config.icon} contact-validation-icon`;
+    if (title) {
+        title.setAttribute('data-i18n', config.title);
+        title.textContent = translations[currentLang][config.title];
     }
+    if (message) {
+        message.setAttribute('data-i18n', config.message);
+        message.textContent = translations[currentLang][config.message];
+    }
+    overlay.classList.add('active');
+    overlay.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
 }
 
 function closeContactValidationPopup() {
@@ -1069,7 +1085,7 @@ function submitContactViaWhatsApp() {
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`, '_blank');
 }
 
-function submitContactViaEmail() {
+async function submitContactViaEmail() {
     const name = document.getElementById('contact-name')?.value?.trim();
     const email = document.getElementById('contact-email')?.value?.trim();
     const message = document.getElementById('contact-message')?.value?.trim();
@@ -1077,11 +1093,37 @@ function submitContactViaEmail() {
         openContactValidationPopup();
         return;
     }
-    const subject = currentLang === 'ar' ? 'استفسار من موقع مصر أويل' : 'Inquiry from Misr Oil website';
-    const body = currentLang === 'ar'
-        ? `الاسم: ${name}\nالبريد الإلكتروني: ${email}\n\nالرسالة:\n${message}`
-        : `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
-    window.location.href = `mailto:info@misr-oil.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const btn = document.querySelector('.btn-contact-email');
+    const btnLabel = btn?.querySelector('span');
+    const originalLabel = btnLabel?.textContent;
+    if (btn) btn.disabled = true;
+    if (btnLabel) btnLabel.textContent = translations[currentLang]['contact_sending'];
+
+    const subject = currentLang === 'ar'
+        ? `استفسار من موقع مصر أويل - ${email}`
+        : `Inquiry from Misr Oil website - ${email}`;
+    try {
+        const response = await fetch('https://formsubmit.co/ajax/abdohoor010@gmail.com', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify({
+                _subject: subject,
+                _template: 'table',
+                _captcha: 'false',
+                name: name,
+                email: email,
+                message: message
+            })
+        });
+        if (!response.ok) throw new Error('Failed to send');
+        openContactValidationPopup('success');
+        document.getElementById('contact-form')?.reset();
+    } catch (err) {
+        openContactValidationPopup('error');
+    } finally {
+        if (btn) btn.disabled = false;
+        if (btnLabel && originalLabel) btnLabel.textContent = translations[currentLang]['contact_send_email'];
+    }
 }
 
 // WhatsApp Order Function
