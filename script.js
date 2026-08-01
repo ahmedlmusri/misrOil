@@ -380,17 +380,26 @@ document.addEventListener('DOMContentLoaded', function () {
         if (event) event.preventDefault();
         const orderName = document.getElementById('order-name');
         const orderAddress = document.getElementById('order-address');
+        const orderRep = document.getElementById('order-rep');
+        const orderDiscount = document.getElementById('order-discount');
         const orderItems = document.getElementById('order-items');
         const name = orderName.value.trim();
         const address = orderAddress.value.trim();
+        const rep = orderRep ? orderRep.value.trim() : '';
+        const discount = orderDiscount ? orderDiscount.value.trim() : '';
         const orderText = orderItems.value.trim();
         if (!name || !address) return false;
 
         const phoneNumber = '201044022949';
         const nameLabel = currentLang === 'ar' ? 'الاسم' : 'Name';
         const addressLabel = currentLang === 'ar' ? 'العنوان' : 'Address';
+        const repLabel = currentLang === 'ar' ? 'اسم المندوب' : 'Sales Rep';
+        const discountLabel = currentLang === 'ar' ? 'كود الخصم' : 'Discount Code';
         const orderLabel = currentLang === 'ar' ? 'الطلب' : 'Order';
-        const message = `${nameLabel}: ${name}\n${addressLabel}: ${address}\n${orderLabel}:\n${orderText}`;
+        let message = `${nameLabel}: ${name}\n${addressLabel}: ${address}`;
+        if (rep) message += `\n${repLabel}: ${rep}`;
+        if (discount) message += `\n${discountLabel}: ${discount}`;
+        message += `\n${orderLabel}:\n${orderText}`;
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
         closeOrderModal();
@@ -1072,7 +1081,7 @@ function submitContactViaEmail() {
     const body = currentLang === 'ar'
         ? `الاسم: ${name}\nالبريد الإلكتروني: ${email}\n\nالرسالة:\n${message}`
         : `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
-    window.location.href = `mailto:info@misroil.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:info@misr-oil.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 
 // WhatsApp Order Function
