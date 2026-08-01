@@ -1,0 +1,19 @@
+# System / editor files
+.DS_Store
+Thumbs.db
+
+# Vercel local config (links the folder to a specific Vercel account/project)
+.vercel
+
+# Leftover working files — not referenced anywhere in the site code
+cookies.txt
+temp_css_snippet.css
+pixabay.html
+READ_ME_VIDEO.txt
+
+# Unused videos (~23MB, not referenced in index.html/script.js/styles.css)
+*.mp4
+
+# Unused personal photos
+WhatsApp Image*.jpeg
+public/images/WhatsApp Image*.jpeg
