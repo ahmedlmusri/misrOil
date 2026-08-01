@@ -1115,7 +1115,8 @@ async function submitContactViaEmail() {
                 message: message
             })
         });
-        if (!response.ok) throw new Error('Failed to send');
+        const result = await response.json();
+        if (!response.ok || String(result.success) !== 'true') throw new Error(result.message || 'Failed to send');
         openContactValidationPopup('success');
         document.getElementById('contact-form')?.reset();
     } catch (err) {
