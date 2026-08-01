@@ -17,3 +17,6 @@ READ_ME_VIDEO.txt
 # Unused personal photos
 WhatsApp Image*.jpeg
 public/images/WhatsApp Image*.jpeg
+
+# Claude Code local settings
+.claude/
